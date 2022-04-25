@@ -1,0 +1,39 @@
+﻿<Window
+    x:Class="Ychebka3KYRSKrasnov.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="OsnovaHome"
+    Title="MainWindow"
+    Width="1920"
+    Height="5335"
+    Background="Black"
+    FontFamily="Broadway"
+    mc:Ignorable="d">
+    <Grid x:Name="OsnovGridhome">
+        <Label
+            x:Name="LB_NameCompany"
+            Margin="90,105,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Black"
+            Content="Krasnovich_CREW"
+            FontSize="90"
+            FontStyle="Normal"
+            FontWeight="Normal"
+            Foreground="White" />
+        <Label
+            x:Name="LB_PhoneCompany"
+            Margin="1050,35,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="Black"
+            Content="+7(960)-083-77-75"
+            FontSize="36"
+            Foreground="#FF1DF2DC"
+            RenderTransformOrigin="0.499,0.58" />
+        <Label x:Name="LB_JOBTime" Content="Работаем с 9:00 до 21:00" HorizontalAlignment="Left" Margin="1075,105,0,0" VerticalAlignment="Top" Background="Black" Foreground="White" FontSize="24"/>
+    </Grid>
+</Window>
