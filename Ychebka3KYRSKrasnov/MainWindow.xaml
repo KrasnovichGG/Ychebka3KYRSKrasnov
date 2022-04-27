@@ -14,6 +14,53 @@
     WindowState="Maximized"
     mc:Ignorable="d">
     <Window.Resources>
+        <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3" />
+        <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="Silver" />
+        <SolidColorBrush x:Key="TextBox.Focus.Border" Color="Silver" />
+        <Style
+            x:Key="PlaceholderTextBoxStyle"
+            BasedOn="{StaticResource {x:Type TextBox}}"
+            TargetType="{x:Type TextBox}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border
+                            x:Name="border"
+                            Padding="{TemplateBinding Padding}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="True">
+                            <Grid>
+                                <ScrollViewer x:Name="PART_ContentHost" />
+                                <TextBlock
+                                    x:Name="textBlock"
+                                    Margin="2,2,0,0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Foreground="#c9c9c9"
+                                    IsHitTestVisible="False"
+                                    Text="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}"
+                                    Visibility="Collapsed" />
+                            </Grid>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Text" Value="">
+                                <Setter TargetName="textBlock" Property="Visibility" Value="Visible" />
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Opacity" Value="0.56" />
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource TextBox.MouseOver.Border}" />
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter TargetName="border" Property="BorderBrush" Value="{StaticResource TextBox.Focus.Border}" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
                 <Setter.Value>
@@ -196,7 +243,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 RenderTransformOrigin="0.5,0.5"
-                Source="/Photo1Blok.png">
+                Source="Images/Photo1Blok.png">
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform />
@@ -241,7 +288,7 @@
                 Foreground="{x:Null}"
                 Style="{DynamicResource ButtonStrelochkaStyle}">
                 <Button.Background>
-                    <ImageBrush ImageSource="/Strelochka.png" />
+                    <ImageBrush ImageSource="Images/Strelochka.png" />
                 </Button.Background>
                 <Button.BorderBrush>
                     <ImageBrush />
@@ -278,7 +325,7 @@
                 Margin="759,918,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Source="/Homies.png" />
+                Source="Images/Homies.png" />
             <TextBlock
                 x:Name="TXTBlock_About_Krasnovich_Crew"
                 Width="793"
@@ -333,7 +380,7 @@
                 Margin="45,1291,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Source="/HappyHouse.png" />
+                Source="Images/HappyHouse.png" />
             <Image
                 x:Name="Image_House4_1"
                 Width="636"
@@ -341,7 +388,7 @@
                 Margin="859,1212,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Source="/House4.1.png" />
+                Source="Images/House4.1.png" />
             <Image
                 x:Name="Image_BigHome"
                 Width="1539"
@@ -349,7 +396,7 @@
                 Margin="0,1848,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Source="/BigHome.png" />
+                Source="Images/BigHome.png" />
             <Image
                 x:Name="Image_BlackLine"
                 Width="1095"
@@ -358,7 +405,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 RenderTransformOrigin="0.5,0.5"
-                Source="/Blackline.png" />
+                Source="Images/Blackline.png" />
             <TextBlock
                 x:Name="TxTBlock_Family"
                 Width="1095"
@@ -391,7 +438,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 RenderTransformOrigin="0.5,0.5"
-                Source="/BeautifulHome1.png" />
+                Source="Images/BeautifulHome1.png" />
             <Label
                 x:Name="LB_Primushestva"
                 Width="693"
@@ -538,7 +585,7 @@
                 Margin="770,3225,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Source="/BeautifulHome2.png" />
+                Source="Images/BeautifulHome2.png" />
             <Label
                 x:Name="LB_Kachestvo"
                 Width="730"
@@ -739,35 +786,15 @@
                 VerticalAlignment="Top"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center"
+                Background="Transparent"
+                BorderThickness="0"
                 Cursor="Hand"
                 FontFamily="Cascadia Code ExtraLight"
                 FontSize="20"
-                Text="TextBox"
+                Foreground="#FFF"
+                Style="{StaticResource PlaceholderTextBoxStyle}"
+                Tag="Имя"
                 TextWrapping="Wrap" />
-            <Label
-                x:Name="LB_NameBox"
-                Width="63"
-                Height="36"
-                Margin="1084,3789,0,0"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Background="Black"
-                Content="Имя"
-                FontFamily="Cooper Black"
-                FontSize="24"
-                FontStyle="Normal"
-                FontWeight="Normal"
-                Foreground="White"
-                RenderTransformOrigin="0.5,0.5">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform />
-                        <SkewTransform />
-                        <RotateTransform Angle="0.058" />
-                        <TranslateTransform />
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
             <TextBox
                 x:Name="TxTBPhone"
                 Width="600"
@@ -777,35 +804,15 @@
                 VerticalAlignment="Top"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center"
+                Background="Transparent"
+                BorderThickness="0"
                 Cursor="Hand"
                 FontFamily="Cascadia Code ExtraLight"
                 FontSize="20"
-                Text="TextBox"
+                Foreground="#FFF"
+                Style="{StaticResource PlaceholderTextBoxStyle}"
+                Tag="Телефон"
                 TextWrapping="Wrap" />
-            <Label
-                x:Name="LB_Phonebox"
-                Width="139"
-                Height="41"
-                Margin="1044,3915,0,0"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Background="Black"
-                Content="Телефон"
-                FontFamily="Cooper Black"
-                FontSize="28"
-                FontStyle="Normal"
-                FontWeight="Normal"
-                Foreground="White"
-                RenderTransformOrigin="0.5,0.5">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform />
-                        <SkewTransform />
-                        <RotateTransform Angle="0.058" />
-                        <TranslateTransform />
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
             <TextBox
                 x:Name="TxTBEmail"
                 Width="600"
@@ -815,35 +822,15 @@
                 VerticalAlignment="Top"
                 HorizontalContentAlignment="Center"
                 VerticalContentAlignment="Center"
+                Background="Transparent"
+                BorderThickness="0"
                 Cursor="Hand"
                 FontFamily="Cascadia Code ExtraLight"
                 FontSize="20"
-                Text="TextBox"
+                Foreground="#FFF"
+                Style="{StaticResource PlaceholderTextBoxStyle}"
+                Tag="Email"
                 TextWrapping="Wrap" />
-            <Label
-                x:Name="LB_EmailBox"
-                Width="100"
-                Height="41"
-                Margin="1065,4045,0,0"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Background="Black"
-                Content="Почта"
-                FontFamily="Cooper Black"
-                FontSize="28"
-                FontStyle="Normal"
-                FontWeight="Normal"
-                Foreground="White"
-                RenderTransformOrigin="0.5,0.5">
-                <Label.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform />
-                        <SkewTransform />
-                        <RotateTransform Angle="0.058" />
-                        <TranslateTransform />
-                    </TransformGroup>
-                </Label.RenderTransform>
-            </Label>
             <Button
                 x:Name="BTN_REGISTRATION"
                 Width="600"

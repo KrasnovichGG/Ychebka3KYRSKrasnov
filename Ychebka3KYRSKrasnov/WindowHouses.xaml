@@ -1,0 +1,46 @@
+﻿<Window
+    x:Class="Ychebka3KYRSKrasnov.WindowHouses"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="WinH"
+    Title="WindowHouses"
+    Width="1920"
+    Height="2777"
+    Background="Black"
+    mc:Ignorable="d">
+    <Grid x:Name="GridHous">
+        <Label
+            x:Name="LB_BuyingHouse"
+            Margin="0,34,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Купить Дом"
+            FontFamily="Segoe UI Black"
+            FontSize="72"
+            Foreground="White" />
+        <TextBlock
+            x:Name="TxTBlock"
+            Width="1516"
+            Margin="0,196,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontFamily="Sitka Small"
+            FontSize="48"
+            Foreground="White"
+            Text="Здесь вы сможете выбрать себе дом из выбранных вариантов,и позже изменить его по машему вкусу и стилю!"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <Label
+            x:Name="LB_OverHouses"
+            Margin="0,408,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Наши дома"
+            FontFamily="Segoe UI Black"
+            FontSize="72"
+            Foreground="White" />
+    </Grid>
+</Window>

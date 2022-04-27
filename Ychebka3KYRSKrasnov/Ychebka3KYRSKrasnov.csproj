@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="WindowHouses.xaml.cs">
+      <DependentUpon>WindowHouses.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +70,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="WindowHouses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -95,31 +102,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Photo1Blok.png" />
+    <Resource Include="Images\Photo1Blok.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Strelochka.png" />
+    <Resource Include="Images\Strelochka.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Homies.png" />
+    <Resource Include="Images\Homies.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="HappyHouse.png" />
+    <Resource Include="Images\HappyHouse.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="House4.1.png" />
+    <Resource Include="Images\House4.1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BigHome.png" />
+    <Resource Include="Images\BigHome.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Blackline.png" />
+    <Resource Include="Images\Blackline.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BeautifulHome1.png" />
+    <Resource Include="Images\BeautifulHome1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BeautifulHome2.png" />
+    <Resource Include="Images\BeautifulHome2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
