@@ -7,8 +7,8 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="OsnovaHome"
     Title="MainWindow"
-    Width="1920"
-    Height="5335"
+    Width="1555"
+    Height="4437"
     Background="Black"
     FontFamily="Broadway"
     WindowState="Maximized"
@@ -87,161 +87,775 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid x:Name="OsnovGridhome" Cursor="Arrow">
-        <Label
-            x:Name="LB_NameCompany"
-            Width="625"
-            Height="80"
-            Margin="45,70,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            Content="Krasnovich_CREW"
-            FontSize="65"
-            FontStyle="Normal"
-            FontWeight="Normal"
-            Foreground="White" />
-        <Label
-            x:Name="LB_PhoneCompany"
-            Margin="675,35,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            Content="+7(960)-083-77-75"
-            Cursor="Arrow"
-            FontSize="38"
-            Foreground="#FF1DF2DC" />
-        <Label
-            x:Name="LB_JOBTime"
-            Margin="700,130,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            Content="Работаем с 9:00 до 21:00"
-            Cursor="Arrow"
-            FontSize="26"
-            Foreground="White" />
-        <Label
-            x:Name="LB_Registration"
-            Margin="1140,45,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            Content="Регистрация"
-            Cursor="Hand"
-            FontFamily="Arial Black"
-            FontSize="36"
-            Foreground="White" />
-        <Ellipse
-            x:Name="Elps_Registration"
-            Width="20"
-            Height="20"
-            Margin="1115,55,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Cursor="No"
-            Fill="White"
-            Stroke="Black" />
-        <Label
-            x:Name="LB_InformationCompany"
-            Margin="1140,170,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            Content="О нашей компании"
-            Cursor="Hand"
-            FontFamily="Arial Black"
-            FontSize="36"
-            Foreground="White" />
-        <Ellipse
-            x:Name="ElpsCompany"
-            Width="20"
-            Height="20"
-            Margin="1115,186,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Cursor="No"
-            Fill="White"
-            Stroke="Black" />
-        <Label
-            x:Name="LB_BuyHome"
-            Margin="1140,112,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            Content="Купить Дом"
-            Cursor="Hand"
-            FontFamily="Arial Black"
-            FontSize="36"
-            Foreground="White" />
-        <Ellipse
-            x:Name="Elps_BHome"
-            Width="20"
-            Height="20"
-            Margin="1115,128,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Cursor="No"
-            Fill="White"
-            Stroke="Black" />
-        <Image
-            x:Name="Photo1BLOCK"
-            Width="764"
-            Height="528"
-            Margin="859,250,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            RenderTransformOrigin="0.5,0.5"
-            Source="/Photo1Blok.png">
-            <Image.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform />
-                    <SkewTransform AngleY="0" />
-                    <RotateTransform />
-                    <TranslateTransform Y="0" />
-                </TransformGroup>
-            </Image.RenderTransform>
+    <ScrollViewer>
+        <Grid
+            x:Name="OsnovGridhome"
+            Width="1545"
+            Cursor="Arrow">
+            <Label
+                x:Name="LB_NameCompany"
+                Width="625"
+                Height="80"
+                Margin="45,70,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Krasnovich_CREW"
+                FontSize="65"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White" />
+            <Label
+                x:Name="LB_PhoneCompany"
+                Margin="675,35,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="+7(960)-083-77-75"
+                Cursor="Arrow"
+                FontSize="38"
+                Foreground="#FF1DF2DC" />
+            <Label
+                x:Name="LB_JOBTime"
+                Margin="700,130,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Работаем с 9:00 до 21:00"
+                Cursor="Arrow"
+                FontSize="26"
+                Foreground="White" />
+            <Label
+                x:Name="LB_Registration"
+                Margin="1114,45,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Регистрация"
+                Cursor="Hand"
+                FontFamily="Arial Black"
+                FontSize="36"
+                Foreground="White" />
+            <Ellipse
+                x:Name="Elps_Registration"
+                Width="20"
+                Height="20"
+                Margin="1089,61,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Cursor="No"
+                Fill="White"
+                Stroke="Black" />
+            <Label
+                x:Name="LB_InformationCompany"
+                Margin="1114,168,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="О нашей компании"
+                Cursor="Hand"
+                FontFamily="Arial Black"
+                FontSize="36"
+                Foreground="White" />
+            <Ellipse
+                x:Name="ElpsCompany"
+                Width="20"
+                Height="20"
+                Margin="1089,184,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Cursor="No"
+                Fill="White"
+                Stroke="Black" />
+            <Label
+                x:Name="LB_BuyHome"
+                Margin="1114,112,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Купить Дом"
+                Cursor="Hand"
+                FontFamily="Arial Black"
+                FontSize="36"
+                Foreground="White" />
+            <Ellipse
+                x:Name="Elps_BHome"
+                Width="20"
+                Height="20"
+                Margin="1089,128,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Cursor="No"
+                Fill="White"
+                Stroke="Black" />
+            <Image
+                x:Name="Photo1BLOCK"
+                Width="764"
+                Height="528"
+                Margin="859,250,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                RenderTransformOrigin="0.5,0.5"
+                Source="/Photo1Blok.png">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform AngleY="0" />
+                        <RotateTransform />
+                        <TranslateTransform Y="0" />
+                    </TransformGroup>
+                </Image.RenderTransform>
 
-        </Image>
-        <TextBlock
-            x:Name="LB_FrazaMan"
-            Width="755"
-            Height="285"
-            Margin="45,250,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            FontFamily="Cascadia Mono SemiBold"
-            FontSize="48"
-            Foreground="White"
-            Text="Каждый мужчина должен вырастить сына, посадить дерево, остальное сделает наша строительная компания!"
-            TextWrapping="WrapWithOverflow" />
-        <Label
-            x:Name="LB_MoreINFO"
-            Margin="160,605,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Background="Black"
-            Content="Узнайте больше ниже"
-            Cursor="Hand"
-            FontSize="38"
-            Foreground="#FF1DF2DC" />
-        <Button
-            x:Name="Btn_Strelochka"
-            Width="46"
-            Height="38"
-            Margin="562,613,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Button"
-            Foreground="{x:Null}"
-            Style="{DynamicResource ButtonStrelochkaStyle}">
-            <Button.Background>
-                <ImageBrush ImageSource="/Strelochka.png" />
-            </Button.Background>
-            <Button.BorderBrush>
-                <ImageBrush />
-            </Button.BorderBrush>
-        </Button>
-    </Grid>
+            </Image>
+            <TextBlock
+                x:Name="LB_FrazaMan"
+                Width="755"
+                Height="285"
+                Margin="45,250,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                FontFamily="Cascadia Mono SemiBold"
+                FontSize="48"
+                Foreground="White"
+                Text="Каждый мужчина должен вырастить сына, посадить дерево, остальное сделает наша строительная компания!"
+                TextWrapping="WrapWithOverflow" />
+            <Label
+                x:Name="LB_MoreINFO"
+                Margin="160,605,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Узнайте больше ниже"
+                Cursor="Hand"
+                FontSize="38"
+                Foreground="#FF1DF2DC" />
+            <Button
+                x:Name="Btn_Strelochka"
+                Width="46"
+                Height="38"
+                Margin="562,613,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Button"
+                Foreground="{x:Null}"
+                Style="{DynamicResource ButtonStrelochkaStyle}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Strelochka.png" />
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush />
+                </Button.BorderBrush>
+            </Button>
+            <Label
+                x:Name="LB_About_Our_Company"
+                Width="723"
+                Height="80"
+                Margin="45,905,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="О нашей компании"
+                FontFamily="Century Gothic"
+                FontSize="65"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Image
+                x:Name="Img_Minihome"
+                Width="161"
+                Height="74"
+                Margin="759,918,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/Homies.png" />
+            <TextBlock
+                x:Name="TXTBlock_About_Krasnovich_Crew"
+                Width="793"
+                Height="240"
+                Margin="45,1046,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                FontFamily="Cascadia Mono SemiBold"
+                FontSize="36"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5"
+                Text="Мы создаем жилые дома. Дома - в которых есть всё для преспективной жизни. Где хорошо быть, развиваться и быть счастливым. Представляем вам компанию &quot;Krasnovich_Crew&quot;"
+                TextWrapping="WrapWithOverflow">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform AngleY="0.292" />
+                        <RotateTransform Angle="-0.173" />
+                        <TranslateTransform Y="1.595" />
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock
+                x:Name="TxTBlock_Proects"
+                Width="653"
+                Height="196"
+                Margin="863,999,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                FontFamily="Cascadia Mono SemiBold"
+                FontSize="28"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5"
+                Text="С 2015 года компания вышла на федеральный уровень развития. Сегодня мы реализуем проекты в республиках Татарстан и Беларусь, Московской области, Санкт-Петербурге, Екатеринбурге и т.д."
+                TextWrapping="WrapWithOverflow">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform AngleX="-0.622" />
+                        <RotateTransform />
+                        <TranslateTransform X="-1.189" />
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Image
+                x:Name="Image_HappyHome"
+                Width="611"
+                Height="375"
+                Margin="45,1291,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/HappyHouse.png" />
+            <Image
+                x:Name="Image_House4_1"
+                Width="636"
+                Height="410"
+                Margin="859,1212,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/House4.1.png" />
+            <Image
+                x:Name="Image_BigHome"
+                Width="1539"
+                Height="814"
+                Margin="0,1848,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/BigHome.png" />
+            <Image
+                x:Name="Image_BlackLine"
+                Width="1095"
+                Height="220"
+                Margin="222,1768,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                RenderTransformOrigin="0.5,0.5"
+                Source="/Blackline.png" />
+            <TextBlock
+                x:Name="TxTBlock_Family"
+                Width="1095"
+                Height="228"
+                Margin="225,1759,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                FontFamily="Cascadia Mono SemiBold"
+                FontSize="30"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5"
+                Text="Ваша семья – наша ценность.  Мы в &quot;Krasnovich-Crew&quot; уважаем семью, её интересы и особенности. Каждая семья уникальна, как и каждый член семьи. Мы учитываем эти различия и умеем находить решения, которые придутся по душе каждому члену вашей семьи. Мы разрабатываем и строим единое совершенное пространство для вас и вашей семьи на основе ваших желаний."
+                TextAlignment="Center"
+                TextWrapping="WrapWithOverflow">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform AngleX="-0.622" />
+                        <RotateTransform />
+                        <TranslateTransform X="-1.189" />
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Image
+                x:Name="Image_BHome1"
+                Width="811"
+                Height="456"
+                Margin="0,2732,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                RenderTransformOrigin="0.5,0.5"
+                Source="/BeautifulHome1.png" />
+            <Label
+                x:Name="LB_Primushestva"
+                Width="693"
+                Height="61"
+                Margin="825,2732,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Преимущества нашей компании"
+                FontFamily="Century Gothic"
+                FontSize="38"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Ellipse
+                x:Name="ElpsCompany_Copy"
+                Width="20"
+                Height="20"
+                Margin="859,2807,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Cursor="No"
+                Fill="White"
+                Stroke="Black" />
+            <Label
+                x:Name="LB_ForestLive"
+                Width="495"
+                Height="39"
+                Margin="883,2798,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Жизнь около леса вдали от города"
+                FontFamily="Arial Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Ellipse
+                x:Name="ElpsBalkons"
+                Width="20"
+                Height="20"
+                Margin="859,2857,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Cursor="No"
+                Fill="White"
+                Stroke="Black" />
+            <Label
+                x:Name="LB_Balkons"
+                Width="628"
+                Height="39"
+                Margin="883,2848,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Панорамное остекление лоджий и балконов"
+                FontFamily="Arial Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Ellipse
+                x:Name="ElpsVideoNabl"
+                Width="20"
+                Height="20"
+                Margin="859,2909,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Cursor="No"
+                Fill="White"
+                Stroke="Black" />
+            <Label
+                x:Name="LB_Videonablud"
+                Width="495"
+                Height="39"
+                Margin="883,2900,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Видеонаблюдение на территории"
+                FontFamily="Arial Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBlock
+                x:Name="TxTB_Preimushestva"
+                Width="644"
+                Height="170"
+                Margin="869,2959,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                FontFamily="Cascadia Mono SemiBold"
+                FontSize="24"
+                Foreground="White"
+                Text="Каждый дом для нас уникальный архитектурный проект с современным фасадом и удобными нишами для кондиционеров. Мы вкладываем в него свою душу и любовь, делаем всё во время и никогда не отказываемся от притензий, выслушаиваем все ваши предпочтения."
+                TextWrapping="WrapWithOverflow" />
+            <Image
+                x:Name="Image_BHome2"
+                Width="772"
+                Height="458"
+                Margin="770,3225,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/BeautifulHome2.png" />
+            <Label
+                x:Name="LB_Kachestvo"
+                Width="730"
+                Height="60"
+                Margin="25,3230,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="КАЧЕСТВО, ПРОВЕРЕННОЕ ЭКСПЕРТАМИ"
+                FontFamily="Century Gothic"
+                FontSize="36"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBlock
+                x:Name="TxTB_Preimushestva_Copy"
+                Width="695"
+                Height="286"
+                Margin="61,3309,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                AllowDrop="True"
+                Background="Black"
+                ClipToBounds="True"
+                Cursor="AppStarting"
+                Focusable="True"
+                FontFamily="Cascadia Mono SemiBold"
+                FontSize="24"
+                FontStyle="Oblique"
+                FontWeight="Heavy"
+                ForceCursor="True"
+                Foreground="White"
+                InputScope="PersonalMiddleName"
+                IsHyphenationEnabled="True"
+                IsManipulationEnabled="True"
+                OverridesDefaultStyle="True"
+                RenderTransformOrigin="0.5,0"
+                SnapsToDevicePixels="True"
+                Text="Обладатель золотого знака «Надежный застройщик России».                     Krasnovich_Crew – лучший по качеству в ПФО, входит в ТОП-3 комплексов России по формированию комфортной среды.                     Диплом НОЗА, подтверждающий лидерство по вводу жилья в регионе.                     Финалист 2017, 2018 г. премии Urban Awards                     Высший бал: 5 из 5 - по рейтингу Портала ЕРЗ за соблюдение застройщиком декларируемых сроков ввода жилья в эксплуатацию"
+                TextWrapping="WrapWithOverflow">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1" ScaleY="-1" />
+                        <SkewTransform />
+                        <RotateTransform Angle="180.285" />
+                        <TranslateTransform X="-4.68631" Y="0.076804" />
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Label
+                x:Name="LB_Registration1"
+                Width="500"
+                Height="70"
+                Margin="120,3770,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Зарегистрируйтесь"
+                FontFamily="Cooper Black"
+                FontSize="48"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label
+                x:Name="LB_Phone"
+                Width="126"
+                Height="36"
+                Margin="120,3858,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Телефон"
+                FontFamily="Cooper Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label
+                x:Name="LB_PhoneCompany_Copy"
+                Margin="120,3905,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="+7(960)-083-77-75"
+                Cursor="Arrow"
+                FontFamily="Cascadia Code ExtraLight"
+                FontSize="30"
+                FontWeight="Normal"
+                Foreground="White" />
+            <Label
+                x:Name="LB_Mail"
+                Width="86"
+                Height="36"
+                Margin="120,3967,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Почта"
+                FontFamily="Cooper Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label
+                x:Name="LB_MailM"
+                Margin="120,4005,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Krasnovich_CREW@BK.RU"
+                Cursor="Arrow"
+                FontFamily="Cascadia Code ExtraLight"
+                FontSize="30"
+                FontWeight="Normal"
+                Foreground="White" />
+            <Label
+                x:Name="LB_Address"
+                Width="86"
+                Height="36"
+                Margin="120,4069,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Адрес"
+                FontFamily="Cooper Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Label
+                x:Name="LB_Address1"
+                Margin="120,4119,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="г.Казань Башня &quot;KrasnovichTower&quot; "
+                Cursor="Arrow"
+                FontFamily="Cascadia Code ExtraLight"
+                FontSize="30"
+                FontWeight="Normal"
+                Foreground="White" />
+            <TextBox
+                x:Name="TxTBName"
+                Width="600"
+                Height="63"
+                Margin="809,3835,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Cursor="Hand"
+                FontFamily="Cascadia Code ExtraLight"
+                FontSize="20"
+                Text="TextBox"
+                TextWrapping="Wrap" />
+            <Label
+                x:Name="LB_NameBox"
+                Width="63"
+                Height="36"
+                Margin="1084,3789,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Имя"
+                FontFamily="Cooper Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBox
+                x:Name="TxTBPhone"
+                Width="600"
+                Height="63"
+                Margin="809,3964,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Cursor="Hand"
+                FontFamily="Cascadia Code ExtraLight"
+                FontSize="20"
+                Text="TextBox"
+                TextWrapping="Wrap" />
+            <Label
+                x:Name="LB_Phonebox"
+                Width="139"
+                Height="41"
+                Margin="1044,3915,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Телефон"
+                FontFamily="Cooper Black"
+                FontSize="28"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <TextBox
+                x:Name="TxTBEmail"
+                Width="600"
+                Height="63"
+                Margin="809,4095,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Cursor="Hand"
+                FontFamily="Cascadia Code ExtraLight"
+                FontSize="20"
+                Text="TextBox"
+                TextWrapping="Wrap" />
+            <Label
+                x:Name="LB_EmailBox"
+                Width="100"
+                Height="41"
+                Margin="1065,4045,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Почта"
+                FontFamily="Cooper Black"
+                FontSize="28"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+            <Button
+                x:Name="BTN_REGISTRATION"
+                Width="600"
+                Height="63"
+                Margin="809,4180,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="#FF1DF2DC"
+                BorderBrush="#FF1DF2DC"
+                Content="Зарегистрируйтесь"
+                FontFamily="Courier New"
+                FontSize="36" />
+        </Grid>
+    </ScrollViewer>
 </Window>

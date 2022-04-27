@@ -100,5 +100,26 @@
   <ItemGroup>
     <Resource Include="Strelochka.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Homies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HappyHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="House4.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BigHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Blackline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeautifulHome1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeautifulHome2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
