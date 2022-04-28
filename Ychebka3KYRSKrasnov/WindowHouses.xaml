@@ -24,7 +24,7 @@
         <TextBlock
             x:Name="TxTBlock"
             Width="1516"
-            Margin="0,196,0,0"
+            Margin="0,192,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             FontFamily="Sitka Small"
@@ -35,7 +35,7 @@
             TextWrapping="Wrap" />
         <Label
             x:Name="LB_OverHouses"
-            Margin="0,408,0,0"
+            Margin="0,406,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Content="Наши дома"
