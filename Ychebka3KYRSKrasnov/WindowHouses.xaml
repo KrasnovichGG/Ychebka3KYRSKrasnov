@@ -42,5 +42,107 @@
             FontFamily="Segoe UI Black"
             FontSize="72"
             Foreground="White" />
+        <Image
+            x:Name="Image_1Home"
+            Width="632"
+            Height="503"
+            Margin="202,578,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/KYB.png" />
+        <Image
+            x:Name="Image_2Home"
+            Width="632"
+            Height="503"
+            Margin="1088,578,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/MOB.png" />
+        <Image
+            x:Name="Image_3Home"
+            Width="641"
+            Height="534"
+            Margin="197,1213,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/MS.png" />
+        <Image
+            x:Name="Image_4Home"
+            Width="630"
+            Height="522"
+            Margin="1088,1213,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/S.png" />
+        <Image
+            x:Name="Image_5Home"
+            Width="630"
+            Height="527"
+            Margin="202,1910,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/MKS.png" />
+        <Image
+            x:Name="Image_6Home"
+            Width="632"
+            Height="525"
+            Margin="1088,1910,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Source="/ODO.png" />
+        <Label
+            x:Name="LB_HOME1"
+            Margin="198,1104,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Дом &quot;Каникулы у бабушки&quot;"
+            FontFamily="Segoe UI Semibold"
+            FontSize="48"
+            Foreground="White" />
+        <Label
+            x:Name="LB_HOME2"
+            Margin="1085,1104,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Дом &quot;Мой папа бизнесмен&quot;"
+            FontFamily="Segoe UI Semibold"
+            FontSize="48"
+            Foreground="White" />
+        <Label
+            x:Name="LB_HOM3"
+            Margin="280,1776,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Дом &quot;Мечта соседа&quot;"
+            FontFamily="Segoe UI Semibold"
+            FontSize="48"
+            Foreground="White" />
+        <Label
+            x:Name="LB_HOM4"
+            Margin="1206,1776,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Дом &quot;Семейный&quot;"
+            FontFamily="Segoe UI Semibold"
+            FontSize="48"
+            Foreground="White" />
+        <Label
+            x:Name="LB_HOM5"
+            Margin="181,2481,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Дом &quot;Мага, как это строить?&quot;"
+            FontFamily="Segoe UI Semibold"
+            FontSize="48"
+            Foreground="White" />
+        <Label
+            x:Name="LB_HOM6"
+            Margin="1072,2498,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Дом &quot;Дорого очень дорого&quot;"
+            FontFamily="Segoe UI Semibold"
+            FontSize="48"
+            Foreground="White" />
     </Grid>
 </Window>

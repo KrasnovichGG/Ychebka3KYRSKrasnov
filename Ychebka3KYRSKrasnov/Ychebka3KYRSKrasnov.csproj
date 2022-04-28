@@ -128,5 +128,23 @@
   <ItemGroup>
     <Resource Include="Images\BeautifulHome2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="KYB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MOB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MKS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ODO.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
