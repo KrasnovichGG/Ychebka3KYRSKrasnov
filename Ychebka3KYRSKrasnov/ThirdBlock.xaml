@@ -1,0 +1,57 @@
+﻿<Window
+    x:Class="Ychebka3KYRSKrasnov.ThirdBlock"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="WinThird"
+    Title="ThirdBlock"
+    Width="800"
+    Height="1000"
+    Background="Black"
+    mc:Ignorable="d">
+    <Grid x:Name="GridThird">
+        <Label
+            x:Name="LB_Home1"
+            Width="324"
+            Margin="0,21,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Дом &quot;Очень очень дорого&quot;"
+            FontFamily="Segoe UI Semibold"
+            FontSize="24"
+            Foreground="White" />
+        <Image
+            x:Name="IMGH1"
+            Width="326"
+            Height="266"
+            Margin="0,86,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Source="/ODO1.png" />
+        <TextBlock
+            x:Name="TXTBOPIS"
+            Width="596"
+            Margin="0,373,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            FontFamily="Sitka Small"
+            FontSize="20"
+            Foreground="White"
+            Text="Дом вашей мечты вблизи города нам нужна будет только речка а так все будет:)"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <TextBlock
+            x:Name="TXTBVIBOR"
+            Width="446"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Sitka Small"
+            FontSize="24"
+            Foreground="White"
+            Text="Сечас мы с вами будет выбирать что вы хотите чтобы былов в вашем доме из этого будет строиться сумма проекта"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+    </Grid>
+</Window>

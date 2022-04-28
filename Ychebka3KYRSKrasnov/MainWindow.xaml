@@ -298,7 +298,7 @@
                 x:Name="LB_About_Our_Company"
                 Width="723"
                 Height="80"
-                Margin="45,905,0,0"
+                Margin="45,921,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"

@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ThirdBlock.xaml.cs">
+      <DependentUpon>ThirdBlock.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WindowHouses.xaml.cs">
       <DependentUpon>WindowHouses.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ThirdBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowHouses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,6 +152,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ODO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ODO1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
