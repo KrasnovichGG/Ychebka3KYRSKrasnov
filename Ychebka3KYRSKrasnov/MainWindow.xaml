@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:locala="clr-namespace:RichTextBoxDemo.SmoothScroll"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="OsnovaHome"
     Title="MainWindow"
@@ -134,11 +135,15 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <ScrollViewer>
+    <locala:SmoothScrollViewer x:Name="qwer">
         <Grid
             x:Name="OsnovGridhome"
             Width="1545"
             Cursor="Arrow">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1378*" />
+                <RowDefinition Height="3043*" />
+            </Grid.RowDefinitions>
             <Label
                 x:Name="LB_NameCompany"
                 Width="625"
@@ -182,7 +187,8 @@
                 Cursor="Hand"
                 FontFamily="Arial Black"
                 FontSize="36"
-                Foreground="White" />
+                Foreground="White"
+                PreviewMouseDown="LB_Registration_PreviewMouseDown" />
             <Ellipse
                 x:Name="Elps_Registration"
                 Width="20"
@@ -375,6 +381,7 @@
             </TextBlock>
             <Image
                 x:Name="Image_HappyHome"
+                Grid.RowSpan="2"
                 Width="611"
                 Height="375"
                 Margin="45,1291,0,0"
@@ -383,6 +390,7 @@
                 Source="Images/HappyHouse.png" />
             <Image
                 x:Name="Image_House4_1"
+                Grid.RowSpan="2"
                 Width="636"
                 Height="410"
                 Margin="859,1212,0,0"
@@ -391,27 +399,30 @@
                 Source="Images/House4.1.png" />
             <Image
                 x:Name="Image_BigHome"
+                Grid.Row="1"
                 Width="1539"
                 Height="814"
-                Margin="0,1848,0,0"
+                Margin="0,470,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Source="Images/BigHome.png" />
             <Image
                 x:Name="Image_BlackLine"
+                Grid.Row="1"
                 Width="1095"
                 Height="220"
-                Margin="222,1768,0,0"
+                Margin="222,390,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 RenderTransformOrigin="0.5,0.5"
                 Source="Images/Blackline.png" />
             <TextBlock
                 x:Name="TxTBlock_Family"
+                Grid.Row="1"
                 Width="1095"
                 Height="228"
-                Margin="225,1759,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,381,0,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 Background="Black"
                 FontFamily="Cascadia Mono SemiBold"
@@ -432,18 +443,20 @@
             </TextBlock>
             <Image
                 x:Name="Image_BHome1"
+                Grid.Row="1"
                 Width="811"
                 Height="456"
-                Margin="0,2732,0,0"
+                Margin="0,1354,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 RenderTransformOrigin="0.5,0.5"
                 Source="Images/BeautifulHome1.png" />
             <Label
                 x:Name="LB_Primushestva"
+                Grid.Row="1"
                 Width="693"
                 Height="61"
-                Margin="825,2732,0,0"
+                Margin="825,1354,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -465,9 +478,10 @@
             </Label>
             <Ellipse
                 x:Name="ElpsCompany_Copy"
+                Grid.Row="1"
                 Width="20"
                 Height="20"
-                Margin="859,2807,0,0"
+                Margin="859,1429,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Cursor="No"
@@ -475,9 +489,10 @@
                 Stroke="Black" />
             <Label
                 x:Name="LB_ForestLive"
+                Grid.Row="1"
                 Width="495"
                 Height="39"
-                Margin="883,2798,0,0"
+                Margin="883,1420,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -499,9 +514,10 @@
             </Label>
             <Ellipse
                 x:Name="ElpsBalkons"
+                Grid.Row="1"
                 Width="20"
                 Height="20"
-                Margin="859,2857,0,0"
+                Margin="859,1479,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Cursor="No"
@@ -509,9 +525,10 @@
                 Stroke="Black" />
             <Label
                 x:Name="LB_Balkons"
+                Grid.Row="1"
                 Width="628"
                 Height="39"
-                Margin="883,2848,0,0"
+                Margin="883,1470,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -533,9 +550,10 @@
             </Label>
             <Ellipse
                 x:Name="ElpsVideoNabl"
+                Grid.Row="1"
                 Width="20"
                 Height="20"
-                Margin="859,2909,0,0"
+                Margin="859,1531,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Cursor="No"
@@ -543,9 +561,10 @@
                 Stroke="Black" />
             <Label
                 x:Name="LB_Videonablud"
+                Grid.Row="1"
                 Width="495"
                 Height="39"
-                Margin="883,2900,0,0"
+                Margin="883,1522,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -567,9 +586,10 @@
             </Label>
             <TextBlock
                 x:Name="TxTB_Preimushestva"
+                Grid.Row="1"
                 Width="644"
                 Height="170"
-                Margin="869,2959,0,0"
+                Margin="869,1581,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -580,17 +600,19 @@
                 TextWrapping="WrapWithOverflow" />
             <Image
                 x:Name="Image_BHome2"
+                Grid.Row="1"
                 Width="772"
                 Height="458"
-                Margin="770,3225,0,0"
+                Margin="770,1847,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Source="Images/BeautifulHome2.png" />
             <Label
                 x:Name="LB_Kachestvo"
+                Grid.Row="1"
                 Width="730"
                 Height="60"
-                Margin="25,3230,0,0"
+                Margin="25,1852,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -612,9 +634,10 @@
             </Label>
             <TextBlock
                 x:Name="TxTB_Preimushestva_Copy"
+                Grid.Row="1"
                 Width="695"
                 Height="286"
-                Margin="61,3309,0,0"
+                Margin="61,1931,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 AllowDrop="True"
@@ -647,13 +670,16 @@
             </TextBlock>
             <Label
                 x:Name="LB_Registration1"
-                Width="500"
+                Grid.Row="1"
+                Width="742"
                 Height="70"
-                Margin="120,3770,0,0"
+                Margin="416,2346,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
                 Background="Black"
-                Content="Зарегистрируйтесь"
+                Content="Если есть что сказать "
                 FontFamily="Cooper Black"
                 FontSize="48"
                 FontStyle="Normal"
@@ -671,9 +697,10 @@
             </Label>
             <Label
                 x:Name="LB_Phone"
+                Grid.Row="1"
                 Width="126"
                 Height="36"
-                Margin="120,3858,0,0"
+                Margin="120,2480,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -695,7 +722,8 @@
             </Label>
             <Label
                 x:Name="LB_PhoneCompany_Copy"
-                Margin="120,3905,0,0"
+                Grid.Row="1"
+                Margin="120,2527,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -707,9 +735,10 @@
                 Foreground="White" />
             <Label
                 x:Name="LB_Mail"
+                Grid.Row="1"
                 Width="86"
                 Height="36"
-                Margin="120,3967,0,0"
+                Margin="120,2589,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -731,7 +760,8 @@
             </Label>
             <Label
                 x:Name="LB_MailM"
-                Margin="120,4005,0,0"
+                Grid.Row="1"
+                Margin="120,2627,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -743,9 +773,10 @@
                 Foreground="White" />
             <Label
                 x:Name="LB_Address"
+                Grid.Row="1"
                 Width="86"
                 Height="36"
-                Margin="120,4069,0,0"
+                Margin="120,2691,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -767,7 +798,8 @@
             </Label>
             <Label
                 x:Name="LB_Address1"
-                Margin="120,4119,0,0"
+                Grid.Row="1"
+                Margin="120,2741,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="Black"
@@ -779,9 +811,10 @@
                 Foreground="White" />
             <TextBox
                 x:Name="TxTBName"
+                Grid.Row="1"
                 Width="600"
                 Height="63"
-                Margin="809,3835,0,0"
+                Margin="809,2457,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 HorizontalContentAlignment="Center"
@@ -793,13 +826,14 @@
                 FontSize="20"
                 Foreground="#FFF"
                 Style="{StaticResource PlaceholderTextBoxStyle}"
-                Tag="Имя"
+                Tag="Ваше имя"
                 TextWrapping="Wrap" />
             <TextBox
                 x:Name="TxTBPhone"
+                Grid.Row="1"
                 Width="600"
                 Height="63"
-                Margin="809,3964,0,0"
+                Margin="809,2586,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 HorizontalContentAlignment="Center"
@@ -811,13 +845,14 @@
                 FontSize="20"
                 Foreground="#FFF"
                 Style="{StaticResource PlaceholderTextBoxStyle}"
-                Tag="Телефон"
+                Tag="Телефон для связи с вами"
                 TextWrapping="Wrap" />
             <TextBox
                 x:Name="TxTBEmail"
+                Grid.Row="1"
                 Width="600"
                 Height="63"
-                Margin="809,4095,0,0"
+                Margin="809,2717,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 HorizontalContentAlignment="Center"
@@ -829,20 +864,70 @@
                 FontSize="20"
                 Foreground="#FFF"
                 Style="{StaticResource PlaceholderTextBoxStyle}"
-                Tag="Email"
+                Tag="Ваш Email"
                 TextWrapping="Wrap" />
             <Button
-                x:Name="BTN_REGISTRATION"
+                x:Name="BTN_OTZIV"
+                Grid.Row="1"
                 Width="600"
                 Height="63"
-                Margin="809,4180,0,0"
+                Margin="809,2802,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Background="#FF1DF2DC"
                 BorderBrush="#FF1DF2DC"
-                Content="Зарегистрируйтесь"
+                Click="BTN_REGISTRATION_Click"
+                Content="Отравить письмо"
                 FontFamily="Courier New"
                 FontSize="36" />
+            <Button
+                Grid.Row="1"
+                Width="137"
+                Height="63"
+                Margin="120,2834,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Button_Click"
+                Content="Button" />
+            <TextBox
+                x:Name="txtboxotziv"
+                Grid.Row="1"
+                Width="250"
+                Height="185"
+                Margin="550,2525,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                Background="#FF1DF2DC"
+                FontFamily="Cascadia Code ExtraLight"
+                FontSize="22"
+                TextWrapping="Wrap" />
+            <Label
+                x:Name="LB_Otziv"
+                Grid.Row="1"
+                Width="146"
+                Height="36"
+                Margin="602,2480,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="Black"
+                Content="Ваш отзыв"
+                FontFamily="Cooper Black"
+                FontSize="24"
+                FontStyle="Normal"
+                FontWeight="Normal"
+                Foreground="White"
+                RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform />
+                        <SkewTransform />
+                        <RotateTransform Angle="0.058" />
+                        <TranslateTransform />
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
         </Grid>
-    </ScrollViewer>
+    </locala:SmoothScrollViewer>
 </Window>

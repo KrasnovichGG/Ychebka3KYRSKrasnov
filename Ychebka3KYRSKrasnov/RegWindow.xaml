@@ -1,0 +1,76 @@
+﻿<Window
+    x:Class="Ychebka3KYRSKrasnov.RegWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="winreg"
+    Title="RegWindow"
+    Width="800"
+    Height="450"
+    Background="Black"
+    mc:Ignorable="d">
+    <Grid x:Name="gridreg">
+        <Label
+            x:Name="LB_Reg"
+            Margin="0,26,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Зарегистрируйтесь"
+            FontFamily="NSimSun"
+            FontSize="36"
+            Foreground="White" />
+        <TextBox
+            x:Name="txtboxlogin"
+            Width="424"
+            Height="52"
+            Margin="0,146,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontFamily="Sitka Small"
+            FontSize="22"
+            TextWrapping="Wrap" />
+        <PasswordBox
+            x:Name="PasBoxReg"
+            Width="424"
+            Height="52"
+            Margin="0,272,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontSize="18" />
+        <Button
+            x:Name="Btn_Reg"
+            Width="205"
+            Height="55"
+            Margin="0,351,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Background="#FF1DF2DC"
+            Content="Зарегистрироваться"
+            FontFamily="Segoe UI Semilight"
+            FontSize="20" />
+        <Label
+            x:Name="LB_Login"
+            Margin="0,109,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Ваш Логин"
+            FontFamily="NSimSun"
+            FontSize="20"
+            Foreground="White" />
+        <Label
+            x:Name="LB_Pass"
+            Margin="0,235,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Ваш Пароль"
+            FontFamily="NSimSun"
+            FontSize="20"
+            Foreground="White" />
+    </Grid>
+</Window>
