@@ -14,11 +14,10 @@ namespace Ychebka3KYRSKrasnov
     
     public partial class Auth
     {
-        public int ID_Auth { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
         public Nullable<int> ID_Role { get; set; }
-        public Nullable<int> ID_Person { get; set; }
+        public int ID_Person { get; set; }
     
         public virtual Person Person { get; set; }
         public virtual Role Role { get; set; }

@@ -23,7 +23,7 @@ namespace Ychebka3KYRSKrasnov
     public partial class MainWindow : Window
     {
         Auth auth = new Auth();
-        public static Houses_WiKiEntities house = new Houses_WiKiEntities();
+        public static Houses_WiKiEntities1 house = new Houses_WiKiEntities1();
         public static Auth authUser;
 
         public MainWindow()

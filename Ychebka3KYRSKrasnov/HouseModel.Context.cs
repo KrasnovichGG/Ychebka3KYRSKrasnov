@@ -13,10 +13,10 @@ namespace Ychebka3KYRSKrasnov
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Houses_WiKiEntities : DbContext
+    public partial class Houses_WiKiEntities1 : DbContext
     {
-        public Houses_WiKiEntities()
-            : base("name=Houses_WiKiEntities")
+        public Houses_WiKiEntities1()
+            : base("name=Houses_WiKiEntities1")
         {
         }
     
@@ -25,9 +25,9 @@ namespace Ychebka3KYRSKrasnov
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Auth> Auth { get; set; }
         public virtual DbSet<Person> Person { get; set; }
         public virtual DbSet<Role> Role { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

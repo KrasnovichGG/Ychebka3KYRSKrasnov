@@ -19,12 +19,12 @@ namespace Ychebka3KYRSKrasnov
     /// </summary>
     public partial class LoginWindow : Window
     {
-        Auth auth = new Auth();
-        public static Auth authUser;
+        //Auth auth = new Auth();
+        //public static Auth authUser;
         public LoginWindow()
         {
             InitializeComponent();
-            Auth auth = new Auth();
+            //Auth auth = new Auth();
         }
 
         private void Passbox_TextChanged(object sender, TextChangedEventArgs e)
@@ -34,38 +34,38 @@ namespace Ychebka3KYRSKrasnov
 
         private void btnreg_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow main = new MainWindow();
-            main.Show();
+            RegWindow regWindow = new RegWindow();
+            regWindow.Show();
         }
 
         private void btnVXOD_Click(object sender, RoutedEventArgs e)
         {
-            if (txtblogin.Text == "" || Passbox.Text == "")
-            {
-                MessageBox.Show("Введите свои данные");
-            }
-            else foreach (var user in MainWindow.house.Auth)
-                {
-                    if (user.Login == txtblogin.Text.Trim())
-                    {
-                        if (user.Password == Passbox.Text.Trim() && user.ID_Role == 2)
-                        {
-                            MessageBox.Show($"Привет Пользователь {user.Login}");
-                            MainWindow.authUser = user;
-                            MainWindow main = new MainWindow();
-                            main.Show();
+            //if (txtblogin.Text == "" || Passbox.Text == "")
+            //{
+            //    MessageBox.Show("Введите свои данные");
+            //}
+            //else foreach (var user in MainWindow.house.Auth)
+            //    {
+            //        if (user.Login == txtblogin.Text.Trim())
+            //        {
+            //            if (user.Password == Passbox.Text.Trim() && user.ID_Role == 2)
+            //            {
+            //                MessageBox.Show($"Привет Пользователь {user.Login}");
+            //                MainWindow.authUser = user;
+            //                MainWindow main = new MainWindow();
+            //                main.Show();
 
-                        }
-                        if (user.Password == Passbox.Text.Trim() && user.ID_Role == 1)
-                        {
-                            MessageBox.Show($"Привет админ {user.Login}");
-                            MainWindow.authUser = user;
-                            MainWindow main = new MainWindow();
-                            main.Show();
+            //            }
+            //            if (user.Password == Passbox.Text.Trim() && user.ID_Role == 1)
+            //            {
+            //                MessageBox.Show($"Привет админ {user.Login}");
+            //                MainWindow.authUser = user;
+            //                MainWindow main = new MainWindow();
+            //                main.Show();
 
-                        }
-                    }
-                }
+            //            }
+            //        }
+            //    }
         }
     }
 }

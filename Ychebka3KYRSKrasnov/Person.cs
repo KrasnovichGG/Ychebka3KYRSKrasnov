@@ -14,18 +14,11 @@ namespace Ychebka3KYRSKrasnov
     
     public partial class Person
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Person()
-        {
-            this.Auth = new HashSet<Auth>();
-        }
-    
         public int ID_Person { get; set; }
         public string Name { get; set; }
         public Nullable<decimal> Phone { get; set; }
         public string Email { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Auth> Auth { get; set; }
+        public virtual Auth Auth { get; set; }
     }
 }

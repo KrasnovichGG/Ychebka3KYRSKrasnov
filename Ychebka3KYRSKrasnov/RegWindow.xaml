@@ -8,13 +8,13 @@
     x:Name="winreg"
     Title="RegWindow"
     Width="800"
-    Height="450"
+    Height="600"
     Background="Black"
     mc:Ignorable="d">
     <Grid x:Name="gridreg">
         <Label
             x:Name="LB_Reg"
-            Margin="0,26,0,0"
+            Margin="0,10,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Content="Зарегистрируйтесь"
@@ -24,8 +24,8 @@
         <TextBox
             x:Name="txtboxlogin"
             Width="424"
-            Height="52"
-            Margin="0,146,0,0"
+            Height="30"
+            Margin="0,102,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
@@ -36,8 +36,8 @@
         <PasswordBox
             x:Name="PasBoxReg"
             Width="424"
-            Height="52"
-            Margin="0,272,0,0"
+            Height="30"
+            Margin="0,440,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
@@ -45,32 +45,96 @@
             FontSize="18" />
         <Button
             x:Name="Btn_Reg"
-            Width="205"
+            Width="204"
             Height="55"
-            Margin="0,351,0,0"
+            Margin="0,505,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Background="#FF1DF2DC"
+            Click="Btn_Reg_Click"
             Content="Зарегистрироваться"
             FontFamily="Segoe UI Semilight"
             FontSize="20" />
         <Label
             x:Name="LB_Login"
-            Margin="0,109,0,0"
+            Margin="0,71,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Content="Ваш Логин"
             FontFamily="NSimSun"
-            FontSize="20"
+            FontSize="18"
             Foreground="White" />
         <Label
             x:Name="LB_Pass"
-            Margin="0,235,0,0"
+            Margin="0,409,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Content="Ваш Пароль"
             FontFamily="NSimSun"
-            FontSize="20"
+            FontSize="18"
+            Foreground="White" />
+        <TextBox
+            x:Name="txtboxname"
+            Width="424"
+            Height="30"
+            Margin="0,188,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontFamily="Sitka Small"
+            FontSize="22"
+            TextWrapping="Wrap" />
+        <Label
+            x:Name="LB_Name"
+            Margin="0,157,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Ваше имя"
+            FontFamily="NSimSun"
+            FontSize="18"
+            Foreground="White" />
+        <TextBox
+            x:Name="txtboxphone"
+            Width="424"
+            Height="30"
+            Margin="0,262,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontFamily="Sitka Small"
+            FontSize="22"
+            TextWrapping="Wrap" />
+        <Label
+            x:Name="LB_phone"
+            Margin="0,231,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Ваш телефон"
+            FontFamily="NSimSun"
+            FontSize="18"
+            Foreground="White" />
+        <TextBox
+            x:Name="txtboxemail"
+            Width="424"
+            Height="30"
+            Margin="0,348,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            FontFamily="Sitka Small"
+            FontSize="22"
+            TextWrapping="Wrap" />
+        <Label
+            x:Name="LB_email"
+            Margin="0,317,0,0"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Content="Ваша почта"
+            FontFamily="NSimSun"
+            FontSize="18"
             Foreground="White" />
     </Grid>
 </Window>
