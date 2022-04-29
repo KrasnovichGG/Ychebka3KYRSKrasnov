@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -31,38 +33,21 @@ namespace Ychebka3KYRSKrasnov
             InitializeComponent();
         }
 
-        private void BTN_REGISTRATION_Click(object sender, RoutedEventArgs e)
+        private void BTN_OTZIV_Click(object sender, RoutedEventArgs e)
         {
-            //BTN_REGISTRATION.ToolTip = "Запишет ваши данные!";
-            //if (TxTBName.Text == "" || TxTBPhone.Text == "" || TxTBEmail.Text == "")
-            //{
-            //    MessageBox.Show("Введите свои данные");
-            //}
-            //else
-            //{
-            //    Person client = new Person();
-            //    client.Name = TxTBName.Text;
-            //    client.Phone = Convert.ToDecimal(TxTBPhone.Text);
-            //    client.Email = TxTBEmail.Text;
-            //    MainWindow.house.Person.Add(client);
-            //    try
-            //    {
-            //        MainWindow.house.SaveChanges();
-            //        MessageBox.Show("Всё норм,ты красавчик!");
-            //    Auth user = new Auth();
-            //    user.Login = TxTBName.Text;
-            //    user.Password = TxTBPhone.Text;
-            //    user.ID_Role = 2;
-            //    user.ID_Person = client.ID_Person;
-            //    MainWindow.house.Auth.Add(user);
-
-            //        MainWindow.house.SaveChanges();
-            //    }
-            //    catch
-            //    {
-            //        MessageBox.Show("Такой логин уже существует!");
-            //    }
-            //}
+           SmtpClient smtpClient = new SmtpClient();
+           smtpClient.Credentials = new NetworkCredential("Sasha-kr90@bk.ru", "Tge2MzEYdDfZ8CPmRQ3B");
+            smtpClient.Host = ("smtp.mail.ru");
+            smtpClient.Port = 587;
+           smtpClient.EnableSsl = true;
+           MailMessage mailMessage = new MailMessage();
+           mailMessage.From = new MailAddress("Sasha-kr90@bk.ru");
+            mailMessage.To.Add(new MailAddress(TxTBEmail.Text));
+            mailMessage.Subject = "Тема сообщения: " + TxTBsybject.Text;
+            mailMessage.IsBodyHtml = true;
+            mailMessage.Body = "Имя: " + TxTBName.Text + "<br>" + "Телефон: " + TxTBPhone.Text + "<br>" + "Почта:" + TxTBEmail.Text + "<br>" + "Текст сообщения: "  + txtboxotziv.Text;
+            smtpClient.Send(mailMessage);
+            
         }
 
         private void LB_Registration_PreviewMouseDown(object sender, MouseButtonEventArgs e)

@@ -79,6 +79,7 @@
             VerticalAlignment="Top"
             Cursor="Hand"
             FontSize="24"
+            Foreground="White"
             Style="{StaticResource PlaceholderTextBoxStyle}"
             Tag="Логин"
             TextAlignment="Center"
@@ -90,6 +91,7 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             FontSize="24"
+            Foreground="White"
             Style="{StaticResource ResourceKey=PlaceholderTextBoxStyle}"
             Tag="Пароль"
             TextAlignment="Center"
@@ -102,9 +104,11 @@
             Margin="0,275,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
+            Background="White"
+            Click="btnVXOD_Click"
             Content="Войти в приложение"
             FontFamily="Segoe UI Black"
-            FontSize="24" Click="btnVXOD_Click" Background="White" />
+            FontSize="24" />
         <Label
             x:Name="LB_Krew"
             Width="268"
@@ -146,16 +150,17 @@
             </Label.RenderTransform>
         </Label>
         <Button
-            Background="White"
-            BorderThickness="0"
             x:Name="btnreg"
             Width="246"
             Height="30"
             Margin="0,360,277,0"
             HorizontalAlignment="Right"
             VerticalAlignment="Top"
+            Background="White"
+            BorderThickness="0"
+            Click="btnreg_Click"
             Content="Зарегистрироваться"
             FontFamily="Segoe UI Black"
-            FontSize="16" Click="btnreg_Click" />
+            FontSize="16" />
     </Grid>
 </Window>
