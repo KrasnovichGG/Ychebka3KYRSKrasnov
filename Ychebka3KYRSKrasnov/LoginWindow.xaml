@@ -10,6 +10,7 @@
     Width="800"
     Height="450"
     Background="Black"
+    ResizeMode="NoResize"
     mc:Ignorable="d">
     <Window.Resources>
         <SolidColorBrush x:Key="TextBox.Static.Border" Color="#FFABAdB3" />
@@ -60,7 +61,10 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid x:Name="gridlogin">
+    <Grid
+        x:Name="gridlogin"
+        HorizontalAlignment="Stretch"
+        VerticalAlignment="Stretch">
         <Label
             x:Name="LB_KYKY"
             Margin="0,25,0,0"
@@ -77,6 +81,8 @@
             Margin="0,99,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
             Cursor="Hand"
             FontSize="24"
             Foreground="White"
@@ -90,6 +96,8 @@
             Height="54"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
             FontSize="24"
             Foreground="White"
             Style="{StaticResource ResourceKey=PlaceholderTextBoxStyle}"

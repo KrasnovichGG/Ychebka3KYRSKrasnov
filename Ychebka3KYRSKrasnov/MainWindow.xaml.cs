@@ -35,19 +35,25 @@ namespace Ychebka3KYRSKrasnov
 
         private void BTN_OTZIV_Click(object sender, RoutedEventArgs e)
         {
-           SmtpClient smtpClient = new SmtpClient();
-           smtpClient.Credentials = new NetworkCredential("Sasha-kr90@bk.ru", "Tge2MzEYdDfZ8CPmRQ3B");
-            smtpClient.Host = ("smtp.mail.ru");
-            smtpClient.Port = 587;
-           smtpClient.EnableSsl = true;
-           MailMessage mailMessage = new MailMessage();
-           mailMessage.From = new MailAddress("Sasha-kr90@bk.ru");
-            mailMessage.To.Add(new MailAddress(TxTBEmail.Text));
-            mailMessage.Subject = "Тема сообщения: " + TxTBsybject.Text;
-            mailMessage.IsBodyHtml = true;
-            mailMessage.Body = "Имя: " + TxTBName.Text + "<br>" + "Телефон: " + TxTBPhone.Text + "<br>" + "Почта:" + TxTBEmail.Text + "<br>" + "Текст сообщения: "  + txtboxotziv.Text;
-            smtpClient.Send(mailMessage);
-            
+            if (string.IsNullOrEmpty(TxTBEmail.Text) && string.IsNullOrEmpty(TxTBName.Text) && string.IsNullOrEmpty(TxTBPhone.Text) && string.IsNullOrEmpty(txtboxotziv.Text) && string.IsNullOrEmpty(TxTBsybject.Text))
+            {
+                MessageBox.Show("Пожалуйста введите симловы во все поля!");
+            }
+            else
+            {
+                SmtpClient smtpClient = new SmtpClient();
+                smtpClient.Credentials = new NetworkCredential("Sasha-kr90@bk.ru", "Tge2MzEYdDfZ8CPmRQ3B");
+                smtpClient.Host = ("smtp.mail.ru");
+                smtpClient.Port = 587;
+                smtpClient.EnableSsl = true;
+                MailMessage mailMessage = new MailMessage();
+                mailMessage.From = new MailAddress("Sasha-kr90@bk.ru");
+                mailMessage.To.Add(new MailAddress(TxTBEmail.Text));
+                mailMessage.Subject = "Тема сообщения: " + TxTBsybject.Text;
+                mailMessage.IsBodyHtml = true;
+                mailMessage.Body = "Имя: " + TxTBName.Text + "<br>" + "Телефон: " + TxTBPhone.Text + "<br>" + "Почта:" + TxTBEmail.Text + "<br>" + "Текст сообщения: " + txtboxotziv.Text;
+                smtpClient.Send(mailMessage);
+            }
         }
 
         private void LB_Registration_PreviewMouseDown(object sender, MouseButtonEventArgs e)
@@ -59,6 +65,16 @@ namespace Ychebka3KYRSKrasnov
         {
             LoginWindow loginWindow = new LoginWindow();
             loginWindow.Show();
+        }
+
+        //private void LB_InformationCompany_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        //{
+        //    qwer.ScrollToVerticalOffset(2000);
+        //}
+
+        private void LB_InformationCompany_PreviewMouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            qwer.ScrollToVerticalOffset(900);
         }
     }
 }
