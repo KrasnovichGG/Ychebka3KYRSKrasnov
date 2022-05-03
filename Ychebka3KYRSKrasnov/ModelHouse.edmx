@@ -18,16 +18,16 @@
           <Key>
             <PropertyRef Name="ID_Balka" />
           </Key>
-          <Property Name="ID_Balka" Type="int" Nullable="false" />
+          <Property Name="ID_Balka" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Color_Balka" Type="nvarchar" MaxLength="15" />
-          <Property Name="Image_Balka" Type="nchar" MaxLength="10" />
+          <Property Name="Image_Balka" Type="varbinary(max)" />
           <Property Name="Price_Balka" Type="decimal" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="Door_For_House">
           <Key>
             <PropertyRef Name="ID_Door" />
           </Key>
-          <Property Name="ID_Door" Type="int" Nullable="false" />
+          <Property Name="ID_Door" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Door_Color" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Dooor" Type="image" />
           <Property Name="Price_Door" Type="int" />
@@ -36,7 +36,7 @@
           <Key>
             <PropertyRef Name="ID_Drain" />
           </Key>
-          <Property Name="ID_Drain" Type="int" Nullable="false" />
+          <Property Name="ID_Drain" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Drain_Color" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Drain" Type="image" />
           <Property Name="Price_Drain" Type="decimal" Precision="10" Scale="2" />
@@ -68,7 +68,7 @@
           <Key>
             <PropertyRef Name="ID_Basement" />
           </Key>
-          <Property Name="ID_Basement" Type="int" Nullable="false" />
+          <Property Name="ID_Basement" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Basement_Color" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Basement" Type="image" />
           <Property Name="Price_Basement" Type="decimal" Precision="10" Scale="2" />
@@ -86,7 +86,7 @@
           <Key>
             <PropertyRef Name="ID_Steps" />
           </Key>
-          <Property Name="ID_Steps" Type="int" Nullable="false" />
+          <Property Name="ID_Steps" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Steps_Color" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Steps" Type="image" />
           <Property Name="Price_Steps" Type="decimal" Precision="10" Scale="2" />
@@ -95,7 +95,7 @@
           <Key>
             <PropertyRef Name="ID_Window" />
           </Key>
-          <Property Name="ID_Window" Type="int" Nullable="false" />
+          <Property Name="ID_Window" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Window_Color" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Window" Type="image" />
           <Property Name="Price_Roof" Type="decimal" Precision="10" Scale="2" />
@@ -104,7 +104,7 @@
           <Key>
             <PropertyRef Name="ID_Pavers" />
           </Key>
-          <Property Name="ID_Pavers" Type="int" Nullable="false" />
+          <Property Name="ID_Pavers" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Pavers_Color" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Pavers" Type="image" />
           <Property Name="Price_Pavers" Type="decimal" Precision="10" Scale="2" />
@@ -122,7 +122,7 @@
           <Key>
             <PropertyRef Name="ID_Plaster" />
           </Key>
-          <Property Name="ID_Plaster" Type="int" Nullable="false" />
+          <Property Name="ID_Plaster" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Color_Plaster" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Plaster" Type="image" />
           <Property Name="Price_Plaster" Type="decimal" Precision="10" Scale="2" />
@@ -131,7 +131,7 @@
           <Key>
             <PropertyRef Name="ID_Railing" />
           </Key>
-          <Property Name="ID_Railing" Type="int" Nullable="false" />
+          <Property Name="ID_Railing" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Color_Railing" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Railing" Type="nchar" MaxLength="10" />
           <Property Name="Price_Railing" Type="decimal" Precision="10" Scale="2" />
@@ -147,7 +147,7 @@
           <Key>
             <PropertyRef Name="ID_Roof" />
           </Key>
-          <Property Name="ID_Roof" Type="int" Nullable="false" />
+          <Property Name="ID_Roof" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Roof_Color" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Roof" Type="image" />
           <Property Name="Price_Roof" Type="decimal" Precision="10" Scale="2" />
@@ -166,7 +166,7 @@
           <Key>
             <PropertyRef Name="ID_Terrace" />
           </Key>
-          <Property Name="ID_Terrace" Type="int" Nullable="false" />
+          <Property Name="ID_Terrace" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Material_Terrace" Type="nvarchar" MaxLength="15" />
           <Property Name="Image_Terrace" Type="image" />
           <Property Name="Price_Terrace" Type="decimal" Precision="10" Scale="2" />
@@ -175,7 +175,7 @@
           <Key>
             <PropertyRef Name="ID_Solution" />
           </Key>
-          <Property Name="ID_Solution" Type="int" Nullable="false" />
+          <Property Name="ID_Solution" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Image" Type="image" />
           <Property Name="Price_Solution" Type="decimal" Precision="18" Scale="3" />
         </EntityType>
@@ -459,9 +459,9 @@
           <Key>
             <PropertyRef Name="ID_Balka" />
           </Key>
-          <Property Name="ID_Balka" Type="Int32" Nullable="false" />
+          <Property Name="ID_Balka" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Color_Balka" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-          <Property Name="Image_Balka" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Image_Balka" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Balka" Type="Decimal" Precision="10" Scale="2" />
           <NavigationProperty Name="Home" Relationship="Self.FK_Home_Balki_House" FromRole="Balki_House" ToRole="Home" />
         </EntityType>
@@ -469,7 +469,7 @@
           <Key>
             <PropertyRef Name="ID_Door" />
           </Key>
-          <Property Name="ID_Door" Type="Int32" Nullable="false" />
+          <Property Name="ID_Door" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Door_Color" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Dooor" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Door" Type="Int32" />
@@ -479,7 +479,7 @@
           <Key>
             <PropertyRef Name="ID_Drain" />
           </Key>
-          <Property Name="ID_Drain" Type="Int32" Nullable="false" />
+          <Property Name="ID_Drain" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Drain_Color" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Drain" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Drain" Type="Decimal" Precision="10" Scale="2" />
@@ -525,7 +525,7 @@
           <Key>
             <PropertyRef Name="ID_Basement" />
           </Key>
-          <Property Name="ID_Basement" Type="Int32" Nullable="false" />
+          <Property Name="ID_Basement" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Basement_Color" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Basement" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Basement" Type="Decimal" Precision="10" Scale="2" />
@@ -545,7 +545,7 @@
           <Key>
             <PropertyRef Name="ID_Steps" />
           </Key>
-          <Property Name="ID_Steps" Type="Int32" Nullable="false" />
+          <Property Name="ID_Steps" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Steps_Color" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Steps" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Steps" Type="Decimal" Precision="10" Scale="2" />
@@ -555,7 +555,7 @@
           <Key>
             <PropertyRef Name="ID_Window" />
           </Key>
-          <Property Name="ID_Window" Type="Int32" Nullable="false" />
+          <Property Name="ID_Window" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Window_Color" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Window" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Roof" Type="Decimal" Precision="10" Scale="2" />
@@ -565,7 +565,7 @@
           <Key>
             <PropertyRef Name="ID_Pavers" />
           </Key>
-          <Property Name="ID_Pavers" Type="Int32" Nullable="false" />
+          <Property Name="ID_Pavers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Pavers_Color" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Pavers" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Pavers" Type="Decimal" Precision="10" Scale="2" />
@@ -585,7 +585,7 @@
           <Key>
             <PropertyRef Name="ID_Plaster" />
           </Key>
-          <Property Name="ID_Plaster" Type="Int32" Nullable="false" />
+          <Property Name="ID_Plaster" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Color_Plaster" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Plaster" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Plaster" Type="Decimal" Precision="10" Scale="2" />
@@ -595,7 +595,7 @@
           <Key>
             <PropertyRef Name="ID_Railing" />
           </Key>
-          <Property Name="ID_Railing" Type="Int32" Nullable="false" />
+          <Property Name="ID_Railing" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Color_Railing" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Railing" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Price_Railing" Type="Decimal" Precision="10" Scale="2" />
@@ -613,7 +613,7 @@
           <Key>
             <PropertyRef Name="ID_Roof" />
           </Key>
-          <Property Name="ID_Roof" Type="Int32" Nullable="false" />
+          <Property Name="ID_Roof" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Roof_Color" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Roof" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Roof" Type="Decimal" Precision="10" Scale="2" />
@@ -633,7 +633,7 @@
           <Key>
             <PropertyRef Name="ID_Terrace" />
           </Key>
-          <Property Name="ID_Terrace" Type="Int32" Nullable="false" />
+          <Property Name="ID_Terrace" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Material_Terrace" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Image_Terrace" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Terrace" Type="Decimal" Precision="10" Scale="2" />
@@ -643,7 +643,7 @@
           <Key>
             <PropertyRef Name="ID_Solution" />
           </Key>
-          <Property Name="ID_Solution" Type="Int32" Nullable="false" />
+          <Property Name="ID_Solution" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Solution" Type="Decimal" Precision="18" Scale="3" />
           <NavigationProperty Name="Home" Relationship="Self.FK_Home_Turnkey_solution_for_home" FromRole="Turnkey_solution_for_home" ToRole="Home" />

@@ -22,7 +22,7 @@ namespace Ychebka3KYRSKrasnov
     
         public int ID_Balka { get; set; }
         public string Color_Balka { get; set; }
-        public string Image_Balka { get; set; }
+        public byte[] Image_Balka { get; set; }
         public Nullable<decimal> Price_Balka { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
