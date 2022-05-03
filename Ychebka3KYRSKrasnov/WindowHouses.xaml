@@ -8,141 +8,156 @@
     x:Name="WinH"
     Title="WindowHouses"
     Width="1920"
-    Height="2777"
+    Height="2900"
     Background="Black"
     mc:Ignorable="d">
-    <Grid x:Name="GridHous">
-        <Label
-            x:Name="LB_BuyingHouse"
-            Margin="0,34,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="Купить Дом"
-            FontFamily="Segoe UI Black"
-            FontSize="72"
-            Foreground="White" />
-        <TextBlock
-            x:Name="TxTBlock"
-            Width="1516"
-            Margin="0,192,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            FontFamily="Sitka Small"
-            FontSize="48"
-            Foreground="White"
-            Text="Здесь вы сможете выбрать себе дом из выбранных вариантов,и позже изменить его по машему вкусу и стилю!"
-            TextAlignment="Center"
-            TextWrapping="Wrap" />
-        <Label
-            x:Name="LB_OverHouses"
-            Margin="0,406,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="Наши дома"
-            FontFamily="Segoe UI Black"
-            FontSize="72"
-            Foreground="White" />
-        <Image
-            x:Name="Image_1Home"
-            Width="632"
-            Height="503"
-            Margin="202,578,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Source="/KYB.png" />
-        <Image
-            x:Name="Image_2Home"
-            Width="632"
-            Height="503"
-            Margin="1088,578,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Source="/MOB.png" />
-        <Image
-            x:Name="Image_3Home"
-            Width="641"
-            Height="534"
-            Margin="197,1213,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Source="/MS.png" />
-        <Image
-            x:Name="Image_4Home"
-            Width="630"
-            Height="522"
-            Margin="1088,1213,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Source="/S.png" />
-        <Image
-            x:Name="Image_5Home"
-            Width="630"
-            Height="527"
-            Margin="202,1910,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Source="/MKS.png" />
-        <Image
-            x:Name="Image_6Home"
-            Width="632"
-            Height="525"
-            Margin="1088,1910,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Source="/ODO.png" />
-        <Label
-            x:Name="LB_HOME1"
-            Margin="198,1104,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Дом &quot;Каникулы у бабушки&quot;"
-            FontFamily="Segoe UI Semibold"
-            FontSize="48"
-            Foreground="White" />
-        <Label
-            x:Name="LB_HOME2"
-            Margin="1085,1104,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Дом &quot;Мой папа бизнесмен&quot;"
-            FontFamily="Segoe UI Semibold"
-            FontSize="48"
-            Foreground="White" />
-        <Label
-            x:Name="LB_HOM3"
-            Margin="280,1776,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Дом &quot;Мечта соседа&quot;"
-            FontFamily="Segoe UI Semibold"
-            FontSize="48"
-            Foreground="White" />
-        <Label
-            x:Name="LB_HOM4"
-            Margin="1206,1776,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Дом &quot;Семейный&quot;"
-            FontFamily="Segoe UI Semibold"
-            FontSize="48"
-            Foreground="White" />
-        <Label
-            x:Name="LB_HOM5"
-            Margin="181,2481,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Дом &quot;Мага, как это строить?&quot;"
-            FontFamily="Segoe UI Semibold"
-            FontSize="48"
-            Foreground="White" />
-        <Label
-            x:Name="LB_HOM6"
-            Margin="1072,2498,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Дом &quot;Дорого очень дорого&quot;"
-            FontFamily="Segoe UI Semibold"
-            FontSize="48"
-            Foreground="White" />
-    </Grid>
+    <ScrollViewer>
+        <Grid x:Name="GridHous">
+            <Label
+                x:Name="LB_BuyingHouse"
+                Margin="0,34,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Купить Дом"
+                FontFamily="Segoe UI Black"
+                FontSize="72"
+                Foreground="White" />
+            <TextBlock
+                x:Name="TxTBlock"
+                Width="1516"
+                Margin="0,192,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                FontFamily="Sitka Small"
+                FontSize="48"
+                Foreground="White"
+                Text="Здесь вы сможете выбрать себе дом из выбранных вариантов,и позже изменить его по машему вкусу и стилю!"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
+            <Label
+                x:Name="LB_OverHouses"
+                Margin="0,406,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Наши дома"
+                FontFamily="Segoe UI Black"
+                FontSize="72"
+                Foreground="White" />
+            <Image
+                x:Name="Image_1Home"
+                Width="632"
+                Height="503"
+                Margin="202,578,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/KYB.png" />
+            <Image
+                x:Name="Image_2Home"
+                Width="632"
+                Height="503"
+                Margin="1088,578,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/MOB.png" />
+            <Image
+                x:Name="Image_3Home"
+                Width="641"
+                Height="534"
+                Margin="197,1213,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/MS.png" />
+            <Image
+                x:Name="Image_4Home"
+                Width="630"
+                Height="522"
+                Margin="1088,1213,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/S.png" />
+            <Image
+                x:Name="Image_5Home"
+                Width="630"
+                Height="527"
+                Margin="202,1910,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/MKS.png" />
+            <Image
+                x:Name="Image_6Home"
+                Width="632"
+                Height="525"
+                Margin="1088,1910,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="/ODO.png" />
+            <Label
+                x:Name="LB_HOME1"
+                Margin="198,1104,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Каникулы у бабушки&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Label
+                x:Name="LB_HOME2"
+                Margin="1085,1104,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Мой папа бизнесмен&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Label
+                x:Name="LB_HOM3"
+                Margin="280,1776,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Мечта соседа&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Label
+                x:Name="LB_HOM4"
+                Margin="1206,1776,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Семейный&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Label
+                x:Name="LB_HOM5"
+                Margin="181,2481,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Мага, как это строить?&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Label
+                x:Name="LB_HOM6"
+                Margin="1072,2498,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Дорого очень дорого&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Button
+                x:Name="Btn_Add_Home"
+                Width="261"
+                Height="103"
+                Margin="195,2637,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Background="#FF1DF2DC"
+                Click="Btn_Add_Home_Click"
+                Content="Add home"
+                Cursor="Hand"
+                FontFamily="Stencil"
+                FontSize="24" />
+        </Grid>
+    </ScrollViewer>
 </Window>

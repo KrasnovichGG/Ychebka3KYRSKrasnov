@@ -139,8 +139,8 @@
         </Label>
         <Label
             x:Name="LB_Krew_Copy"
-            Width="301"
-            Margin="508,286,0,0"
+            Width="275"
+            Margin="511,294,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Krasnovich_Crew"

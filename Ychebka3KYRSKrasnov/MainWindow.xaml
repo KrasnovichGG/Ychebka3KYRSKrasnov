@@ -209,7 +209,8 @@
                 Cursor="Hand"
                 FontFamily="Arial Black"
                 FontSize="36"
-                Foreground="White" PreviewMouseDown="LB_InformationCompany_PreviewMouseDown_1" />
+                Foreground="White"
+                PreviewMouseDown="LB_InformationCompany_PreviewMouseDown_1" />
             <Ellipse
                 x:Name="ElpsCompany"
                 Width="20"
@@ -230,7 +231,7 @@
                 Cursor="Hand"
                 FontFamily="Arial Black"
                 FontSize="36"
-                Foreground="White" />
+                Foreground="White" MouseLeftButtonDown="LB_BuyHome_MouseLeftButtonDown" />
             <Ellipse
                 x:Name="Elps_BHome"
                 Width="20"

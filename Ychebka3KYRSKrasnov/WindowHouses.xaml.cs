@@ -23,5 +23,12 @@ namespace Ychebka3KYRSKrasnov
         {
             InitializeComponent();
         }
+
+        private void Btn_Add_Home_Click(object sender, RoutedEventArgs e)
+        {
+            AddHomeWindow addHomeWindow = new AddHomeWindow();
+            addHomeWindow.Show();
+
+        }
     }
 }

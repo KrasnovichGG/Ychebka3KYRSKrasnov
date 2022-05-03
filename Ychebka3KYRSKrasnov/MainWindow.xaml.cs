@@ -25,7 +25,7 @@ namespace Ychebka3KYRSKrasnov
     public partial class MainWindow : Window
     {
         Auth auth = new Auth();
-        public static Houses_WiKiEntities1 house = new Houses_WiKiEntities1();
+        public static Houses_WiKiEntities house = new Houses_WiKiEntities();
         public static Auth authUser;
 
         public MainWindow()
@@ -75,6 +75,12 @@ namespace Ychebka3KYRSKrasnov
         private void LB_InformationCompany_PreviewMouseDown_1(object sender, MouseButtonEventArgs e)
         {
             qwer.ScrollToVerticalOffset(900);
+        }
+
+        private void LB_BuyHome_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            new WindowHouses().Show(); 
+            this.Close(); 
         }
     }
 }

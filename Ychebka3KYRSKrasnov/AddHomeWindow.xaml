@@ -1,0 +1,60 @@
+﻿<Window
+    x:Class="Ychebka3KYRSKrasnov.AddHomeWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="ADHW"
+    Title="AddHomeWindow"
+    Width="881"
+    Height="459"
+    Background="Black"
+    mc:Ignorable="d">
+    <Grid x:Name="ADHG">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <ListView
+            x:Name="LstViewChastiDoma"
+            Grid.Column="0"
+            VerticalAlignment="Stretch"
+            SelectionChanged="LstViewChastiDoma_SelectionChanged"
+            d:ItemsSource="{d:SampleData ItemCount=9}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Choose Characters" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ComboBox
+            x:Name="CmbVibor"
+            Grid.Column="1"
+            Width="298"
+            Height="66"
+            Margin="260,20,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Image
+            x:Name="Image_Vibor"
+            Grid.Column="1"
+            Width="295"
+            Height="198"
+            Margin="264,114,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Button
+            x:Name="BtnAddToDB"
+            Grid.Column="1"
+            Width="147"
+            Height="42"
+            Margin="340,370,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Background="#FF1DF2DC"
+            BorderBrush="White"
+            Content="Add to DataBase"
+            FontFamily="Stencil" Click="BtnAddToDB_Click" />
+    </Grid>
+</Window>
