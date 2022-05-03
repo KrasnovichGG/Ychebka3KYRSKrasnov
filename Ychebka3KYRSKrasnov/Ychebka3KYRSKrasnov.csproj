@@ -122,11 +122,20 @@
     <Compile Include="Railing_For_Home.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Plaster_for_the_house.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Railing_For_Home.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Role.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Roof_of_the_house.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roof_of_the_house.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ScrollViewerExtend.cs" />
     <Compile Include="LoginWindow.xaml.cs">
@@ -140,6 +149,9 @@
     </Compile>
     <Compile Include="Terrace_Home.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Terrace_Home.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ThirdBlock.xaml.cs">
       <DependentUpon>ThirdBlock.xaml</DependentUpon>
