@@ -36,6 +36,7 @@ namespace Ychebka3KYRSKrasnov
         {
             SELECTiTEM = ((sender as ListView).SelectedItem).ToString();
 
+
         }
 
         private void BtnAddToDB_Click(object sender, RoutedEventArgs e)
