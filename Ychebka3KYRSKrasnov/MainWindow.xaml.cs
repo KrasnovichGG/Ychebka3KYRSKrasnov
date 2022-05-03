@@ -76,5 +76,11 @@ namespace Ychebka3KYRSKrasnov
         {
             qwer.ScrollToVerticalOffset(900);
         }
+
+        private void LB_BuyHome_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            new WindowHouses().Show(); 
+            this.Close(); 
+        }
     }
 }

@@ -64,7 +64,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddHomeWindow.xaml.cs">
+      <DependentUpon>AddHomeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Auth.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Balki_House.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Door_For_House.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Drain_For_Home.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
       <DependentUpon>HouseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="HouseModel.Context.cs">
@@ -82,10 +97,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HouseModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="House_Basement_Cokol_.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="House_Facade.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="House_Steps.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="House_Windows.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pavers_House.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Person.cs">
       <DependentUpon>HouseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Plaster_for_the_house.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Railing_For_Home.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Role.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Roof_of_the_house.cs">
       <DependentUpon>HouseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="ScrollViewerExtend.cs" />
@@ -98,13 +137,23 @@
     <Compile Include="sysdiagrams.cs">
       <DependentUpon>HouseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Terrace_Home.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="ThirdBlock.xaml.cs">
       <DependentUpon>ThirdBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Turnkey_solution_for_home.cs">
+      <DependentUpon>HouseModel.tt</DependentUpon>
     </Compile>
     <Compile Include="WindowHouses.xaml.cs">
       <DependentUpon>WindowHouses.xaml</DependentUpon>
     </Compile>
     <Compile Include="SmoothScrollViewer.cs" />
+    <Page Include="AddHomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

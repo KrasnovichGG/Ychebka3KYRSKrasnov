@@ -29,5 +29,19 @@ namespace Ychebka3KYRSKrasnov
         public virtual DbSet<Person> Person { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Balki_House> Balki_House { get; set; }
+        public virtual DbSet<Door_For_House> Door_For_House { get; set; }
+        public virtual DbSet<Drain_For_Home> Drain_For_Home { get; set; }
+        public virtual DbSet<Home> Home { get; set; }
+        public virtual DbSet<House_Basement_Cokol_> House_Basement_Cokol_ { get; set; }
+        public virtual DbSet<House_Facade> House_Facade { get; set; }
+        public virtual DbSet<House_Steps> House_Steps { get; set; }
+        public virtual DbSet<House_Windows> House_Windows { get; set; }
+        public virtual DbSet<Pavers_House> Pavers_House { get; set; }
+        public virtual DbSet<Plaster_for_the_house> Plaster_for_the_house { get; set; }
+        public virtual DbSet<Railing_For_Home> Railing_For_Home { get; set; }
+        public virtual DbSet<Roof_of_the_house> Roof_of_the_house { get; set; }
+        public virtual DbSet<Terrace_Home> Terrace_Home { get; set; }
+        public virtual DbSet<Turnkey_solution_for_home> Turnkey_solution_for_home { get; set; }
     }
 }
