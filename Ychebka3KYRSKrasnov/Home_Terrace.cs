@@ -12,20 +12,13 @@ namespace Ychebka3KYRSKrasnov
     using System;
     using System.Collections.Generic;
     
-    public partial class Plaster_for_the_house
+    public partial class Home_Terrace
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Plaster_for_the_house()
-        {
-            this.Home_Plaster = new HashSet<Home_Plaster>();
-        }
+        public int ID_HT { get; set; }
+        public int ID_Terrace { get; set; }
+        public int ID_Home { get; set; }
     
-        public int ID_Plaster { get; set; }
-        public string Color_Plaster { get; set; }
-        public byte[] Image_Plaster { get; set; }
-        public Nullable<decimal> Price_Plaster { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home_Plaster> Home_Plaster { get; set; }
+        public virtual Home Home { get; set; }
+        public virtual Terrace_Home Terrace_Home { get; set; }
     }
 }

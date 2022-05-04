@@ -17,7 +17,7 @@ namespace Ychebka3KYRSKrasnov
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Drain_For_Home()
         {
-            this.Home = new HashSet<Home>();
+            this.Home_Drain = new HashSet<Home_Drain>();
         }
     
         public int ID_Drain { get; set; }
@@ -26,6 +26,6 @@ namespace Ychebka3KYRSKrasnov
         public Nullable<decimal> Price_Drain { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home> Home { get; set; }
+        public virtual ICollection<Home_Drain> Home_Drain { get; set; }
     }
 }

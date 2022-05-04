@@ -17,7 +17,7 @@ namespace Ychebka3KYRSKrasnov
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Door_For_House()
         {
-            this.Home = new HashSet<Home>();
+            this.Home_Door = new HashSet<Home_Door>();
         }
     
         public int ID_Door { get; set; }
@@ -26,6 +26,6 @@ namespace Ychebka3KYRSKrasnov
         public Nullable<int> Price_Door { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home> Home { get; set; }
+        public virtual ICollection<Home_Door> Home_Door { get; set; }
     }
 }

@@ -17,7 +17,7 @@ namespace Ychebka3KYRSKrasnov
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Balki_House()
         {
-            this.Home = new HashSet<Home>();
+            this.Home_Balki = new HashSet<Home_Balki>();
         }
     
         public int ID_Balka { get; set; }
@@ -26,6 +26,6 @@ namespace Ychebka3KYRSKrasnov
         public Nullable<decimal> Price_Balka { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home> Home { get; set; }
+        public virtual ICollection<Home_Balki> Home_Balki { get; set; }
     }
 }

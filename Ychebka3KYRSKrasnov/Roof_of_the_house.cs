@@ -17,7 +17,7 @@ namespace Ychebka3KYRSKrasnov
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Roof_of_the_house()
         {
-            this.Home = new HashSet<Home>();
+            this.Home_Roof = new HashSet<Home_Roof>();
         }
     
         public int ID_Roof { get; set; }
@@ -26,6 +26,6 @@ namespace Ychebka3KYRSKrasnov
         public Nullable<decimal> Price_Roof { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home> Home { get; set; }
+        public virtual ICollection<Home_Roof> Home_Roof { get; set; }
     }
 }

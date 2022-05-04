@@ -14,37 +14,55 @@ namespace Ychebka3KYRSKrasnov
     
     public partial class Home
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Home()
+        {
+            this.Home_Balki = new HashSet<Home_Balki>();
+            this.Home_Cokol = new HashSet<Home_Cokol>();
+            this.Home_Door = new HashSet<Home_Door>();
+            this.Home_Drain = new HashSet<Home_Drain>();
+            this.Home_Fasad = new HashSet<Home_Fasad>();
+            this.Home_Pavers = new HashSet<Home_Pavers>();
+            this.Home_Plaster = new HashSet<Home_Plaster>();
+            this.Home_Railing = new HashSet<Home_Railing>();
+            this.Home_Roof = new HashSet<Home_Roof>();
+            this.Home_Solution = new HashSet<Home_Solution>();
+            this.Home_Steps = new HashSet<Home_Steps>();
+            this.Home_Terrace = new HashSet<Home_Terrace>();
+            this.Home_Window = new HashSet<Home_Window>();
+        }
+    
         public int ID_Home { get; set; }
         public string Name { get; set; }
         public string Opisanie { get; set; }
         public byte[] Image_Home { get; set; }
         public Nullable<decimal> Price { get; set; }
-        public Nullable<int> ID_Drain { get; set; }
-        public Nullable<int> ID_Door { get; set; }
-        public Nullable<int> ID_Solution { get; set; }
-        public Nullable<int> ID_Roof { get; set; }
-        public Nullable<int> ID_Basement { get; set; }
-        public Nullable<int> ID_Window { get; set; }
-        public Nullable<int> ID_Pavers { get; set; }
-        public Nullable<int> ID_Steps { get; set; }
-        public Nullable<int> ID_Facade { get; set; }
-        public Nullable<int> ID_Railing { get; set; }
-        public Nullable<int> ID_Balka { get; set; }
-        public Nullable<int> ID_Terrace { get; set; }
-        public Nullable<int> ID_Plaster { get; set; }
     
-        public virtual Balki_House Balki_House { get; set; }
-        public virtual Door_For_House Door_For_House { get; set; }
-        public virtual Drain_For_Home Drain_For_Home { get; set; }
-        public virtual House_Basement_Cokol_ House_Basement_Cokol_ { get; set; }
-        public virtual House_Facade House_Facade { get; set; }
-        public virtual House_Steps House_Steps { get; set; }
-        public virtual House_Windows House_Windows { get; set; }
-        public virtual Pavers_House Pavers_House { get; set; }
-        public virtual Plaster_for_the_house Plaster_for_the_house { get; set; }
-        public virtual Railing_For_Home Railing_For_Home { get; set; }
-        public virtual Roof_of_the_house Roof_of_the_house { get; set; }
-        public virtual Terrace_Home Terrace_Home { get; set; }
-        public virtual Turnkey_solution_for_home Turnkey_solution_for_home { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Balki> Home_Balki { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Cokol> Home_Cokol { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Door> Home_Door { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Drain> Home_Drain { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Fasad> Home_Fasad { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Pavers> Home_Pavers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Plaster> Home_Plaster { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Railing> Home_Railing { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Roof> Home_Roof { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Solution> Home_Solution { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Steps> Home_Steps { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Terrace> Home_Terrace { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Home_Window> Home_Window { get; set; }
     }
 }

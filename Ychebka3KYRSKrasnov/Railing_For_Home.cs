@@ -17,7 +17,7 @@ namespace Ychebka3KYRSKrasnov
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Railing_For_Home()
         {
-            this.Home = new HashSet<Home>();
+            this.Home_Railing = new HashSet<Home_Railing>();
         }
     
         public int ID_Railing { get; set; }
@@ -26,6 +26,6 @@ namespace Ychebka3KYRSKrasnov
         public Nullable<decimal> Price_Railing { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home> Home { get; set; }
+        public virtual ICollection<Home_Railing> Home_Railing { get; set; }
     }
 }

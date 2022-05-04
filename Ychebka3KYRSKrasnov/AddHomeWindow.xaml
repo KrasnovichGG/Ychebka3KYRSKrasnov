@@ -10,7 +10,8 @@
     Width="881"
     Height="459"
     Background="Black"
-    mc:Ignorable="d" ResizeMode="NoResize">
+    ResizeMode="NoResize"
+    mc:Ignorable="d">
     <Grid x:Name="ADHG">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
@@ -69,7 +70,15 @@
             FontSize="24"
             TextAlignment="Center"
             TextWrapping="Wrap" />
-        <Label x:Name="LB_color" Grid.Column="1" Content="Enter object color" HorizontalAlignment="Left" Margin="80,76,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil"/>
+        <Label
+            x:Name="LB_color"
+            Grid.Column="1"
+            Margin="80,76,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Enter object color"
+            FontFamily="Stencil"
+            Foreground="White" />
         <TextBox
             x:Name="TxtBpice"
             Grid.Column="1"
@@ -82,7 +91,15 @@
             FontSize="24"
             TextAlignment="Center"
             TextWrapping="Wrap" />
-        <Label x:Name="LB__price" Grid.Column="1" Content="Enter_Price" HorizontalAlignment="Left" Margin="110,204,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil"/>
+        <Label
+            x:Name="LB__price"
+            Grid.Column="1"
+            Margin="110,204,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Enter_Price"
+            FontFamily="Stencil"
+            Foreground="White" />
         <TextBox
             x:Name="TxtBMaterial"
             Grid.Column="1"
@@ -95,13 +112,22 @@
             FontSize="24"
             TextAlignment="Center"
             TextWrapping="Wrap" />
-        <Label x:Name="LB__material" Grid.Column="1" Content="Enter_Material" HorizontalAlignment="Left" Margin="101,321,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" RenderTransformOrigin="0.5,0.5">
+        <Label
+            x:Name="LB__material"
+            Grid.Column="1"
+            Margin="101,321,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Enter_Material"
+            FontFamily="Stencil"
+            Foreground="White"
+            RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.085"/>
-                    <TranslateTransform/>
+                    <ScaleTransform />
+                    <SkewTransform />
+                    <RotateTransform Angle="-0.085" />
+                    <TranslateTransform />
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>

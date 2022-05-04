@@ -17,7 +17,7 @@ namespace Ychebka3KYRSKrasnov
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Turnkey_solution_for_home()
         {
-            this.Home = new HashSet<Home>();
+            this.Home_Solution = new HashSet<Home_Solution>();
         }
     
         public int ID_Solution { get; set; }
@@ -25,6 +25,6 @@ namespace Ychebka3KYRSKrasnov
         public Nullable<decimal> Price_Solution { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home> Home { get; set; }
+        public virtual ICollection<Home_Solution> Home_Solution { get; set; }
     }
 }
