@@ -82,6 +82,28 @@
             FontSize="24"
             TextAlignment="Center"
             TextWrapping="Wrap" />
-        <Label x:Name="LB__price" Grid.Column="1" Content="Enter object color" HorizontalAlignment="Left" Margin="80,206,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil"/>
+        <Label x:Name="LB__price" Grid.Column="1" Content="Enter_Price" HorizontalAlignment="Left" Margin="110,204,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil"/>
+        <TextBox
+            x:Name="TxtBMaterial"
+            Grid.Column="1"
+            Width="196"
+            Height="59"
+            Margin="52,355,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontFamily="Stencil"
+            FontSize="24"
+            TextAlignment="Center"
+            TextWrapping="Wrap" />
+        <Label x:Name="LB__material" Grid.Column="1" Content="Enter_Material" HorizontalAlignment="Left" Margin="101,321,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Stencil" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.085"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Grid>
 </Window>

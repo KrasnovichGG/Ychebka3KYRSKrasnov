@@ -55,7 +55,8 @@ namespace Ychebka3KYRSKrasnov
             
             switch(SELECTiTEM)
             {
-                case "Фасад дома": 
+                case "Фасад дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
                     House_Facade house_Facade = new House_Facade();
                     house_Facade.Image_Facade = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
                     house_Facade.Price_Facade = TxtBpice.Text;
@@ -70,6 +71,7 @@ namespace Ychebka3KYRSKrasnov
                     MessageBox.Show("Успешно!");
                     break;
                 case "Брусчатка дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
                     Pavers_House pavers_House = new Pavers_House();
                     pavers_House.Image_Pavers = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
                     pavers_House.Price_Pavers = Convert.ToDecimal(TxtBpice.Text);
@@ -84,6 +86,7 @@ namespace Ychebka3KYRSKrasnov
                     MessageBox.Show("Успешно!");
                     break;
                 case "Крыша дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
                     Roof_of_the_house roof = new Roof_of_the_house();
                     roof.Image_Roof = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
                     roof.Price_Roof = Convert.ToDecimal(TxtBpice.Text);
@@ -98,6 +101,7 @@ namespace Ychebka3KYRSKrasnov
                     MessageBox.Show("Успешно!");
                     break;
                 case "Двери дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
                     Door_For_House door_ = new Door_For_House();
                     door_.Image_Dooor = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
                     door_.Price_Door = Convert.ToInt32(TxtBpice.Text);
@@ -112,6 +116,7 @@ namespace Ychebka3KYRSKrasnov
                     MessageBox.Show("Успешно!");
                     break;
                 case "Балки дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
                     Balki_House balki_ = new Balki_House();
                     balki_.Image_Balka = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
                     balki_.Price_Balka = Convert.ToInt32(TxtBpice.Text);
@@ -125,6 +130,124 @@ namespace Ychebka3KYRSKrasnov
                     MainWindow.house.SaveChanges();
                     MessageBox.Show("Успешно!");
                     break;
+                case "Водостоки дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
+                    Drain_For_Home drain_For_ = new Drain_For_Home();
+                    drain_For_.Image_Drain = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    drain_For_.Price_Drain = Convert.ToInt32(TxtBpice.Text);
+                    drain_For_.Drain_Color = TxtbCoolorobject.Text;
+                    MainWindow.house.Drain_For_Home.Add(drain_For_);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Drain = drain_For_.ID_Drain;
+                    Home k = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    k.ID_Drain = drain_For_.ID_Drain;
+                    MainWindow.house.Home.Add(k);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+                case "Цоколь дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
+                    House_Basement_Cokol_ house_Basement_ = new House_Basement_Cokol_();
+                    house_Basement_.Image_Basement = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    house_Basement_.Price_Basement = Convert.ToInt32(TxtBpice.Text);
+                    house_Basement_.Basement_Color = TxtbCoolorobject.Text;
+                    MainWindow.house.House_Basement_Cokol_.Add(house_Basement_);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Basement = house_Basement_.ID_Basement;
+                    Home l = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    l.ID_Balka = house_Basement_.ID_Basement;
+                    MainWindow.house.Home.Add(l);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+                case "Ступени дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
+                    House_Steps steps  = new House_Steps();
+                    steps.Image_Steps = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    steps.Price_Steps = Convert.ToInt32(TxtBpice.Text);
+                    steps.Steps_Color = TxtbCoolorobject.Text;
+                    MainWindow.house.House_Steps.Add(steps);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Steps = steps.ID_Steps;
+                    Home n = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    n.ID_Steps = steps.ID_Steps;
+                    MainWindow.house.Home.Add(n);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+                case "Окна дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
+                    House_Windows windows = new House_Windows();
+                    windows.Image_Window = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    windows.Price_Roof = Convert.ToInt32(TxtBpice.Text);
+                    windows.Window_Color = TxtbCoolorobject.Text;
+                    MainWindow.house.House_Windows.Add(windows);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Window = windows.ID_Window;
+                    Home y = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    y.ID_Window = windows.ID_Window;
+                    MainWindow.house.Home.Add(y);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+                case "Терраса дома":
+                    TxtBMaterial.Visibility = Visibility.Collapsed;
+                    Terrace_Home terrace_Home = new Terrace_Home();
+                    terrace_Home.Image_Terrace = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    terrace_Home.Price_Terrace = Convert.ToInt32(TxtBpice.Text);
+                    terrace_Home.Material_Terrace = TxtbCoolorobject.Text;
+                    MainWindow.house.Terrace_Home.Add(terrace_Home);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Terrace = terrace_Home.ID_Terrace;
+                    Home o = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    o.ID_Terrace = terrace_Home.ID_Terrace;
+                    MainWindow.house.Home.Add(o);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+                case "Готовые решения":
+                    TxtbCoolorobject.Visibility = Visibility.Collapsed;
+                    Turnkey_solution_for_home turnkey_Solution = new Turnkey_solution_for_home();
+                    turnkey_Solution.Image = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    turnkey_Solution.Price_Solution = Convert.ToInt32(TxtBpice.Text);
+                    MainWindow.house.Turnkey_solution_for_home.Add(turnkey_Solution);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Solution = turnkey_Solution.ID_Solution;
+                    Home m = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    m.ID_Terrace = turnkey_Solution.ID_Solution;
+                    MainWindow.house.Home.Add(m);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+                case "Перила дома":
+                    Railing_For_Home railing = new Railing_For_Home();
+                    railing.Image_Railing = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    railing.Price_Railing = Convert.ToInt32(TxtBpice.Text);
+                    railing.Color_Railing = TxtbCoolorobject.Text;
+                    MainWindow.house.Railing_For_Home.Add(railing);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Railing = railing.ID_Railing;
+                    Home s = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    s.ID_Terrace = railing.ID_Railing;
+                    MainWindow.house.Home.Add(s);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+                case "Штукатурка дома":
+                    Plaster_for_the_house the_House = new Plaster_for_the_house();
+                    the_House.Image_Plaster = getJPGFromImageControl(Image_Vibor.Source as BitmapImage);
+                    the_House.Price_Plaster = Convert.ToInt32(TxtBpice.Text);
+                    the_House.Color_Plaster = TxtbCoolorobject.Text;
+                    MainWindow.house.Plaster_for_the_house.Add(the_House);
+                    MainWindow.house.SaveChanges();
+                    home.ID_Plaster = the_House.ID_Plaster;
+                    Home t = MainWindow.house.Home.Where(x => x.ID_Home == home.ID_Home).FirstOrDefault();
+                    t.ID_Plaster = the_House.ID_Plaster;
+                    MainWindow.house.Home.Add(t);
+                    MainWindow.house.SaveChanges();
+                    MessageBox.Show("Успешно!");
+                    break;
+
             }
         }
 

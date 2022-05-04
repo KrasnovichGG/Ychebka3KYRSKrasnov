@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="deb0c89b41ed4fc1a2ce70968df46188" Name="Diagram1">
+      <Diagram DiagramId="3b7b0b9d84354443b5115ea118f7d5db" Name="Diagram1" ZoomLevel="74">
         <EntityTypeShape EntityType="Houses_WiKiModel.Auth" Width="1.5" PointX="8" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="Houses_WiKiModel.Balki_House" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="Houses_WiKiModel.Door_For_House" Width="1.5" PointX="0.75" PointY="7.375" IsExpanded="true" />

@@ -69,64 +69,64 @@
       <DependentUpon>AddHomeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Auth.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Balki_House.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Door_For_House.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Drain_For_Home.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="House_Basement_Cokol_.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="House_Facade.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="House_Steps.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="House_Windows.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelHouse.Context.cs">
+    <Compile Include="MdelHouse.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelHouse.Context.tt</DependentUpon>
+      <DependentUpon>MdelHouse.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelHouse.cs">
+    <Compile Include="MdelHouse.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
-    <Compile Include="ModelHouse.Designer.cs">
+    <Compile Include="MdelHouse.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ModelHouse.edmx</DependentUpon>
+      <DependentUpon>MdelHouse.edmx</DependentUpon>
     </Compile>
     <Compile Include="Pavers_House.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Person.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Plaster_for_the_house.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Railing_For_Home.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Role.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Roof_of_the_house.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="ScrollViewerExtend.cs" />
     <Compile Include="LoginWindow.xaml.cs">
@@ -136,16 +136,16 @@
       <DependentUpon>RegWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="Terrace_Home.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="ThirdBlock.xaml.cs">
       <DependentUpon>ThirdBlock.xaml</DependentUpon>
     </Compile>
     <Compile Include="Turnkey_solution_for_home.cs">
-      <DependentUpon>ModelHouse.tt</DependentUpon>
+      <DependentUpon>MdelHouse.tt</DependentUpon>
     </Compile>
     <Compile Include="WindowHouses.xaml.cs">
       <DependentUpon>WindowHouses.xaml</DependentUpon>
@@ -202,12 +202,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="ModelHouse.edmx">
+    <EntityDeploy Include="MdelHouse.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ModelHouse.Designer.cs</LastGenOutput>
+      <LastGenOutput>MdelHouse.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="ModelHouse.edmx.diagram">
-      <DependentUpon>ModelHouse.edmx</DependentUpon>
+    <None Include="MdelHouse.edmx.diagram">
+      <DependentUpon>MdelHouse.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -270,15 +270,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ModelHouse.Context.tt">
+    <Content Include="MdelHouse.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelHouse.edmx</DependentUpon>
-      <LastGenOutput>ModelHouse.Context.cs</LastGenOutput>
+      <DependentUpon>MdelHouse.edmx</DependentUpon>
+      <LastGenOutput>MdelHouse.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="ModelHouse.tt">
+    <Content Include="MdelHouse.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ModelHouse.edmx</DependentUpon>
-      <LastGenOutput>ModelHouse.cs</LastGenOutput>
+      <DependentUpon>MdelHouse.edmx</DependentUpon>
+      <LastGenOutput>MdelHouse.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

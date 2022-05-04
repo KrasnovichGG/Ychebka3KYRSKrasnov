@@ -133,7 +133,7 @@
           </Key>
           <Property Name="ID_Railing" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Color_Railing" Type="nvarchar" MaxLength="15" />
-          <Property Name="Image_Railing" Type="nchar" MaxLength="10" />
+          <Property Name="Image_Railing" Type="varbinary(max)" />
           <Property Name="Price_Railing" Type="decimal" Precision="10" Scale="2" />
         </EntityType>
         <EntityType Name="Role">
@@ -597,7 +597,7 @@
           </Key>
           <Property Name="ID_Railing" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Color_Railing" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-          <Property Name="Image_Railing" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Image_Railing" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="Price_Railing" Type="Decimal" Precision="10" Scale="2" />
           <NavigationProperty Name="Home" Relationship="Self.FK_Home_Railing_For_Home" FromRole="Railing_For_Home" ToRole="Home" />
         </EntityType>

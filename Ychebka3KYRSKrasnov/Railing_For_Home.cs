@@ -22,7 +22,7 @@ namespace Ychebka3KYRSKrasnov
     
         public int ID_Railing { get; set; }
         public string Color_Railing { get; set; }
-        public string Image_Railing { get; set; }
+        public byte[] Image_Railing { get; set; }
         public Nullable<decimal> Price_Railing { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
