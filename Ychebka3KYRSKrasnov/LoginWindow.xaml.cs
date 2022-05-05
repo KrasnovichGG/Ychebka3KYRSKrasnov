@@ -27,10 +27,7 @@ namespace Ychebka3KYRSKrasnov
             //Auth auth = new Auth();
         }
 
-        private void Passbox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
 
         private void btnreg_Click(object sender, RoutedEventArgs e)
         {
@@ -40,7 +37,7 @@ namespace Ychebka3KYRSKrasnov
 
         private void btnVXOD_Click(object sender, RoutedEventArgs e)
         {
-            if (txtblogin.Text == "" || Passbox.Text == "")
+            if (txtblogin.Text == "" || Passbox.Password == "")
             {
                 MessageBox.Show("Введите свои данные");
             }
@@ -48,24 +45,38 @@ namespace Ychebka3KYRSKrasnov
                 {
                     if (user.Login == txtblogin.Text.Trim())
                     {
-                        if (user.Password == Passbox.Text.Trim() && user.ID_Role == 2)
+                        if (user.Password == Passbox.Password.Trim() && user.ID_Role == 2)
                         {
                             MessageBox.Show($"Привет Пользователь {user.Login}");
                             MainWindow.authUser = user;
                             MainWindow main = new MainWindow();
                             main.Show();
-
+                            this.Close();
                         }
-                        if (user.Password == Passbox.Text.Trim() && user.ID_Role == 1)
+                        if (user.Password == Passbox.Password.Trim() && user.ID_Role == 1)
                         {
                             MessageBox.Show($"Привет админ {user.Login}");
                             MainWindow.authUser = user;
                             MainWindow main = new MainWindow();
                             main.Show();
+                            this.Close();
 
                         }
                     }
                 }
+            if(MainWindow.authUser == null)
+            {
+                MessageBox.Show("Неправильный логин или пароль!");
+            }
+            
         }
+
+        //public void ProverkaProbel()
+        //{
+        //    if(txtblogin.Text == "" || Passbox.Text == "")
+        //    {
+        //        MessageBox.Show("Заполните все поля!");
+        //    }
+        //}
     }
 }

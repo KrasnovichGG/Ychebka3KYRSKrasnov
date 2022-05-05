@@ -12,6 +12,7 @@
     Height="4750"
     Background="Black"
     FontFamily="Broadway"
+    ResizeMode="NoResize"
     WindowState="Maximized"
     mc:Ignorable="d">
     <Window.Resources>
@@ -231,7 +232,8 @@
                 Cursor="Hand"
                 FontFamily="Arial Black"
                 FontSize="36"
-                Foreground="White" MouseLeftButtonDown="LB_BuyHome_MouseLeftButtonDown" />
+                Foreground="White"
+                MouseLeftButtonDown="LB_BuyHome_MouseLeftButtonDown" />
             <Ellipse
                 x:Name="Elps_BHome"
                 Width="20"
@@ -885,15 +887,6 @@
                 Content="Отравить письмо"
                 FontFamily="Courier New"
                 FontSize="36" />
-            <Button
-                Grid.Row="1"
-                Width="137"
-                Height="63"
-                Margin="120,2834,0,0"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Click="Button_Click"
-                Content="Button" />
             <TextBox
                 x:Name="txtboxotziv"
                 Grid.Row="1"

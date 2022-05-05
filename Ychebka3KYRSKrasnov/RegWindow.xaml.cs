@@ -28,13 +28,8 @@ namespace Ychebka3KYRSKrasnov
         {
             try
             {
-                var user = MainWindow.house.Auth.FirstOrDefault(x => x.Login == txtboxlogin.Text.Trim());
-                if (user != null)
-                {
-                    MessageBox.Show("Такой логин уже существует!");
-                }
-                else
-                {
+                Contains();
+                ProverkaProbel();
                     Person PER = new Person()
                     {
                         Name = txtboxname.Text,
@@ -53,7 +48,6 @@ namespace Ychebka3KYRSKrasnov
                     MainWindow.house.Auth.Add(person);
                     MainWindow.house.SaveChanges();
                     MessageBox.Show("Успешно!");
-                }
             }
             catch (Exception ex)
             {
@@ -66,5 +60,23 @@ namespace Ychebka3KYRSKrasnov
         {
             this.Close();
         }
+         public void Contains()
+        {
+            var user = MainWindow.house.Auth.Where(x => x.Login == txtboxlogin.Text && x.Password == PasBoxReg.Password).FirstOrDefault();
+            if (user != null)
+            {
+                throw new Exception("Такой пользователь уже сущесвует!");
+            }
+        }
+        public void ProverkaProbel()
+        {
+            if (txtboxlogin.Text == "" || PasBoxReg.Password == "" || txtboxemail.Text == "" || txtboxname.Text == "" || txtboxphone.Text == "")
+            {
+                throw new Exception("Введите все данные");
+            }
+            return;
+        }
     }
+
+    
 }

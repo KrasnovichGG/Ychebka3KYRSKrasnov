@@ -86,11 +86,13 @@
             Cursor="Hand"
             FontSize="24"
             Foreground="White"
+            MaxLength="15"
             Style="{StaticResource PlaceholderTextBoxStyle}"
             Tag="Логин"
             TextAlignment="Center"
-            TextWrapping="Wrap" />
-        <TextBox
+            TextWrapping="Wrap"
+            ToolTip="15 символов" />
+        <PasswordBox
             x:Name="Passbox"
             Width="434"
             Height="54"
@@ -98,13 +100,13 @@
             VerticalAlignment="Center"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            Background="Transparent"
+            Cursor="Hand"
             FontSize="24"
             Foreground="White"
-            Style="{StaticResource ResourceKey=PlaceholderTextBoxStyle}"
+            MaxLength="15"
             Tag="Пароль"
-            TextAlignment="Center"
-            TextChanged="Passbox_TextChanged"
-            TextWrapping="Wrap" />
+            ToolTip="15 символов" />
         <Button
             x:Name="btnVXOD"
             Width="382"

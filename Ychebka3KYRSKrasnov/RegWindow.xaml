@@ -33,7 +33,10 @@
             VerticalContentAlignment="Center"
             FontFamily="Sitka Small"
             FontSize="22"
-            TextWrapping="Wrap" />
+            MaxLength="15"
+            TextWrapping="Wrap"
+            ToolTip="До 15 символов"
+            UndoLimit="100" />
         <PasswordBox
             x:Name="PasBoxReg"
             Width="424"
@@ -43,7 +46,9 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
-            FontSize="18" />
+            FontSize="18"
+            MaxLength="15"
+            ToolTip="до 15 символов" />
         <Button
             x:Name="Btn_Reg"
             Width="204"
@@ -85,7 +90,9 @@
             VerticalContentAlignment="Center"
             FontFamily="Sitka Small"
             FontSize="22"
-            TextWrapping="Wrap" />
+            MaxLength="10"
+            TextWrapping="Wrap"
+            ToolTip="До 10 символов" />
         <Label
             x:Name="LB_Name"
             Margin="0,157,0,0"
@@ -106,7 +113,9 @@
             VerticalContentAlignment="Center"
             FontFamily="Sitka Small"
             FontSize="22"
-            TextWrapping="Wrap" />
+            MaxLength="11"
+            TextWrapping="Wrap"
+            ToolTip="до 12 символов" />
         <Label
             x:Name="LB_phone"
             Margin="0,231,0,0"
@@ -127,7 +136,9 @@
             VerticalContentAlignment="Center"
             FontFamily="Sitka Small"
             FontSize="22"
-            TextWrapping="Wrap" />
+            MaxLength="15"
+            TextWrapping="Wrap"
+            ToolTip="до 15 символов" />
         <Label
             x:Name="LB_email"
             Margin="0,317,0,0"
