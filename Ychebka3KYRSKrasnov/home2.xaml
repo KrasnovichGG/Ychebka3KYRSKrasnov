@@ -15,9 +15,10 @@
 
         <Grid x:Name="GridThird">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="112*" />
-                <ColumnDefinition Width="595*" />
-                <ColumnDefinition Width="112*" />
+                <ColumnDefinition Width="107*" />
+                <ColumnDefinition Width="303*" />
+                <ColumnDefinition Width="266*" />
+                <ColumnDefinition Width="107*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="148*" />
@@ -31,6 +32,7 @@
             <Label
                 x:Name="LB_Home2"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="484"
                 Height="64"
                 Margin="51,74,0,0"
@@ -44,6 +46,7 @@
                 x:Name="IMGH1"
                 Grid.Row="1"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="519"
                 Height="425"
                 Margin="29,0,0,0"
@@ -53,7 +56,7 @@
             <TextBlock
                 x:Name="TXTBOPIS"
                 Grid.Row="2"
-                Grid.ColumnSpan="3"
+                Grid.ColumnSpan="4"
                 Width="596"
                 Height="83"
                 Margin="102,77,0,0"
@@ -69,6 +72,7 @@
                 x:Name="TXTBVIBOR"
                 Grid.Row="2"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="446"
                 Height="120"
                 Margin="70,201,0,0"
@@ -94,9 +98,9 @@
             <ComboBox
                 x:Name="cmb2"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Height="60"
-                Margin="360,114,39,0"
+                Margin="57,114,39,0"
                 VerticalAlignment="Top"
                 DisplayMemberPath="Turnkey_solution_for_home.ID_Solution"
                 SelectionChanged="cmb2_SelectionChanged" />
@@ -114,10 +118,10 @@
             <ComboBox
                 x:Name="cmb4"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="60"
-                Margin="360,328,0,0"
+                Margin="57,328,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 DisplayMemberPath="Plaster_for_the_house.Color_Plaster"
@@ -126,6 +130,7 @@
                 x:Name="cmb5"
                 Grid.Row="4"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="170"
                 Height="60"
                 Margin="185,518,0,0"
@@ -139,17 +144,17 @@
                 Grid.Column="1"
                 Width="170"
                 Height="100"
-                Margin="40,10,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,10,220,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img2"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="100"
-                Margin="360,10,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,10,150,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img3"
@@ -163,16 +168,17 @@
             <Image
                 x:Name="img4"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="100"
-                Margin="361,210,0,0"
+                Margin="58,210,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img5"
                 Grid.Row="4"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="170"
                 Height="100"
                 Margin="185,414,0,0"
@@ -181,30 +187,33 @@
             <Image
                 x:Name="img6"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="100"
-                Margin="360,397,0,0"
+                Margin="57,397,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top" />
             <Button
                 x:Name="btnback"
                 Grid.Row="6"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="79"
                 Height="35"
-                Margin="0,5,0,0"
-                HorizontalAlignment="Center"
+                Margin="245,5,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Content="Back" Click="btnback_Click" />
+                Click="btnback_Click"
+                Content="Back" />
             <Button
                 x:Name="btnOfotmitHome"
                 Grid.Row="5"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="150"
                 Height="80"
-                Margin="0,66,0,0"
-                HorizontalAlignment="Center"
+                Margin="210,66,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="btnOfotmitHome_Click"
                 Content="Byu house" />
@@ -220,9 +229,9 @@
             <Label
                 x:Name="LB_cokol"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Grid.ColumnSpan="2"
-                Margin="530,132,0,0"
+                Margin="227,132,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Готовое решение"
@@ -239,9 +248,9 @@
             <Label
                 x:Name="LB_pavers"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Grid.ColumnSpan="2"
-                Margin="534,346,0,0"
+                Margin="231,346,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Штукатурка"
@@ -249,8 +258,8 @@
             <Label
                 x:Name="LB_window"
                 Grid.Row="4"
-                Grid.Column="1"
-                Margin="360,535,0,0"
+                Grid.Column="2"
+                Margin="57,535,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Ступени"

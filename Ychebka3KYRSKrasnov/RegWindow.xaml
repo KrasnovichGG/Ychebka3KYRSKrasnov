@@ -9,9 +9,11 @@
     Title="RegWindow"
     Width="800"
     Height="600"
-    Background="Black"
     ResizeMode="NoResize"
     mc:Ignorable="d">
+    <Window.Background>
+        <ImageBrush ImageSource="/Reg.jpg" />
+    </Window.Background>
     <Grid x:Name="gridreg">
         <Label
             x:Name="LB_Reg"
@@ -21,7 +23,7 @@
             Content="Registration panel"
             FontFamily="Stencil"
             FontSize="36"
-            Foreground="White" />
+            Foreground="Black" />
         <TextBox
             x:Name="txtboxlogin"
             Width="424"
@@ -31,9 +33,12 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
+            
             MaxLength="15"
+            TextAlignment="Center"
             TextWrapping="Wrap"
             ToolTip="До 15 символов"
             UndoLimit="100" />
@@ -46,6 +51,7 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            BorderBrush="Black"
             FontSize="18"
             MaxLength="15"
             ToolTip="до 15 символов" />
@@ -56,7 +62,7 @@
             Margin="0,505,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Background="#FF1DF2DC"
+            Background="#FFF5FF3A"
             Click="Btn_Reg_Click"
             Content="Registration"
             FontFamily="Stencil"
@@ -69,7 +75,7 @@
             Content="your login"
             FontFamily="Stencil"
             FontSize="18"
-            Foreground="White" />
+            Foreground="Black" />
         <Label
             x:Name="LB_Pass"
             Margin="0,409,0,0"
@@ -78,7 +84,7 @@
             Content="Your Pass"
             FontFamily="Stencil"
             FontSize="18"
-            Foreground="White" />
+            Foreground="Black" />
         <TextBox
             x:Name="txtboxname"
             Width="424"
@@ -88,9 +94,11 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
             MaxLength="10"
+            TextAlignment="Center"
             TextWrapping="Wrap"
             ToolTip="До 10 символов" />
         <Label
@@ -101,7 +109,7 @@
             Content="your name"
             FontFamily="Stencil"
             FontSize="18"
-            Foreground="White" />
+            Foreground="Black" />
         <TextBox
             x:Name="txtboxphone"
             Width="424"
@@ -111,9 +119,11 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
             MaxLength="11"
+            TextAlignment="Center"
             TextWrapping="Wrap"
             ToolTip="до 12 символов" />
         <Label
@@ -124,7 +134,7 @@
             Content="Your phone"
             FontFamily="Stencil"
             FontSize="18"
-            Foreground="White" />
+            Foreground="Black" />
         <TextBox
             x:Name="txtboxemail"
             Width="424"
@@ -134,9 +144,11 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
             MaxLength="15"
+            TextAlignment="Center"
             TextWrapping="Wrap"
             ToolTip="до 15 символов" />
         <Label
@@ -147,7 +159,7 @@
             Content="Your mail"
             FontFamily="Stencil"
             FontSize="18"
-            Foreground="White" />
+            Foreground="Black" />
         <Button
             x:Name="Btn_Back"
             Width="104"
@@ -155,7 +167,7 @@
             Margin="41,505,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Background="#FF1DF2DC"
+            Background="#FFF5FF3A"
             Click="Btn_Back_Click"
             Content="Back"
             FontFamily="Stencil"

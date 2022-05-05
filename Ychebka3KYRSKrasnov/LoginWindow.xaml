@@ -9,7 +9,6 @@
     Title="LoginWindow"
     Width="800"
     Height="450"
-    Background="Black"
     ResizeMode="NoResize"
     mc:Ignorable="d">
     <Window.Resources>
@@ -36,7 +35,8 @@
                                     Margin="2,2,0,0"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    Foreground="#c9c9c9"
+                                    FontSize="35"
+                                    Foreground="Black"
                                     IsHitTestVisible="False"
                                     Text="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}"
                                     Visibility="Collapsed" />
@@ -61,19 +61,22 @@
             </Setter>
         </Style>
     </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="/Main.jpg" />
+    </Window.Background>
     <Grid
         x:Name="gridlogin"
         HorizontalAlignment="Stretch"
         VerticalAlignment="Stretch">
         <Label
-            x:Name="LB_KYKY"
+            x:Name="LB_WELLOCOME"
             Margin="0,25,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Content="ДОБРО ПОЖАЛОВАТЬ"
-            FontFamily="NSimSun"
+            Content="Welcome"
+            FontFamily="Stencil"
             FontSize="36"
-            Foreground="White" />
+            Foreground="Black" />
         <TextBox
             x:Name="txtblogin"
             Width="434"
@@ -83,6 +86,7 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            BorderBrush="Black"
             Cursor="Hand"
             FontSize="24"
             Foreground="White"
@@ -101,6 +105,7 @@
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
             Background="Transparent"
+            BorderBrush="Black"
             Cursor="Hand"
             FontSize="24"
             Foreground="White"
@@ -114,10 +119,11 @@
             Margin="0,275,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Background="White"
+            Background="#FFB2F21D"
+            BorderBrush="White"
             Click="btnVXOD_Click"
-            Content="Войти в приложение"
-            FontFamily="Segoe UI Black"
+            Content="Login to the application"
+            FontFamily="Stencil"
             FontSize="24" />
         <Label
             x:Name="LB_Krew"
@@ -125,10 +131,10 @@
             Margin="-2,315,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Content="Krasnovich_Crew"
-            FontFamily="NSimSun"
+            Content="Krasnovich_"
+            FontFamily="Stencil"
             FontSize="36"
-            Foreground="White"
+            Foreground="Black"
             RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -145,10 +151,10 @@
             Margin="511,294,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Content="Krasnovich_Crew"
-            FontFamily="NSimSun"
+            Content="Krasnovich_"
+            FontFamily="Stencil"
             FontSize="36"
-            Foreground="White"
+            Foreground="Black"
             RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
@@ -166,11 +172,12 @@
             Margin="0,360,277,0"
             HorizontalAlignment="Right"
             VerticalAlignment="Top"
-            Background="White"
+            Background="#FFB2F21D"
+            BorderBrush="White"
             BorderThickness="0"
             Click="btnreg_Click"
-            Content="Зарегистрироваться"
-            FontFamily="Segoe UI Black"
+            Content="Registration"
+            FontFamily="Stencil"
             FontSize="16" />
     </Grid>
 </Window>
