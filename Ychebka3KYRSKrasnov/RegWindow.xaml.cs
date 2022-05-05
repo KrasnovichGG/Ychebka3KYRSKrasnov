@@ -61,6 +61,10 @@ namespace Ychebka3KYRSKrasnov
             }
            
         }
-        
+
+        private void Btn_Back_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

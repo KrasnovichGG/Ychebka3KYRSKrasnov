@@ -10,6 +10,8 @@
     Width="1920"
     Height="2900"
     Background="Black"
+    ResizeMode="NoResize"
+    WindowState="Maximized"
     mc:Ignorable="d">
     <ScrollViewer>
         <Grid x:Name="GridHous">

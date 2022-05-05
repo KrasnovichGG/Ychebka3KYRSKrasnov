@@ -63,7 +63,7 @@
           <Key>
             <PropertyRef Name="ID_HC" />
           </Key>
-          <Property Name="ID_HC" Type="int" Nullable="false" />
+          <Property Name="ID_HC" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_Basement" Type="int" Nullable="false" />
           <Property Name="ID_Home" Type="int" Nullable="false" />
         </EntityType>
@@ -135,7 +135,7 @@
           <Key>
             <PropertyRef Name="ID_HS" />
           </Key>
-          <Property Name="ID_HS" Type="int" Nullable="false" />
+          <Property Name="ID_HS" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ID_Steps" Type="int" Nullable="false" />
           <Property Name="ID_Home" Type="int" Nullable="false" />
         </EntityType>
@@ -834,7 +834,7 @@
           <Key>
             <PropertyRef Name="ID_HC" />
           </Key>
-          <Property Name="ID_HC" Type="Int32" Nullable="false" />
+          <Property Name="ID_HC" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_Basement" Type="Int32" Nullable="false" />
           <Property Name="ID_Home" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Home" Relationship="Self.FK_Home_Cokol_Home" FromRole="Home_Cokol" ToRole="Home" />
@@ -924,7 +924,7 @@
           <Key>
             <PropertyRef Name="ID_HS" />
           </Key>
-          <Property Name="ID_HS" Type="Int32" Nullable="false" />
+          <Property Name="ID_HS" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ID_Steps" Type="Int32" Nullable="false" />
           <Property Name="ID_Home" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Home" Relationship="Self.FK_Home_Steps_Home" FromRole="Home_Steps" ToRole="Home" />
