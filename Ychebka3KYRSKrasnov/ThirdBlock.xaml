@@ -8,15 +8,28 @@
     x:Name="WinThird"
     Title="ThirdBlock"
     Width="800"
-    Height="1000"
+    Height="1300"
     Background="Black"
     mc:Ignorable="d">
     <Grid x:Name="GridThird">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="112*" />
+            <ColumnDefinition Width="595*" />
+            <ColumnDefinition Width="112*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80*" />
+            <RowDefinition Height="300*" />
+            <RowDefinition Height="200*" />
+            <RowDefinition Height="410*" />
+        </Grid.RowDefinitions>
         <Label
             x:Name="LB_Home1"
+            Grid.Column="1"
             Width="324"
-            Margin="0,21,0,0"
-            HorizontalAlignment="Center"
+            Height="42"
+            Margin="126,21,0,0"
+            HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Дом &quot;Очень очень дорого&quot;"
             FontFamily="Segoe UI Semibold"
@@ -24,17 +37,22 @@
             Foreground="White" />
         <Image
             x:Name="IMGH1"
-            Width="326"
-            Height="266"
-            Margin="0,86,0,0"
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="330"
+            Height="270"
+            Margin="0,15,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Source="/ODO1.png" />
         <TextBlock
             x:Name="TXTBOPIS"
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
             Width="596"
-            Margin="0,373,0,0"
-            HorizontalAlignment="Center"
+            Height="50"
+            Margin="102,12,0,0"
+            HorizontalAlignment="Left"
             VerticalAlignment="Top"
             FontFamily="Sitka Small"
             FontSize="20"
@@ -44,14 +62,128 @@
             TextWrapping="Wrap" />
         <TextBlock
             x:Name="TXTBVIBOR"
+            Grid.Row="2"
+            Grid.Column="1"
             Width="446"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
+            Height="120"
+            Margin="65,71,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
             FontFamily="Sitka Small"
             FontSize="24"
             Foreground="White"
             Text="Сечас мы с вами будет выбирать что вы хотите чтобы былов в вашем доме из этого будет строиться сумма проекта"
             TextAlignment="Center"
             TextWrapping="Wrap" />
+        <ComboBox
+            x:Name="cmb1"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="60"
+            Margin="40,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <ComboBox
+            x:Name="cmb2"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="60"
+            Margin="361,70,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <ComboBox
+            x:Name="cmb3"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="60"
+            Margin="40,244,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <ComboBox
+            x:Name="cmb4"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="60"
+            Margin="361,244,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <ComboBox
+            x:Name="cmb5"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="60"
+            Margin="40,423,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <ComboBox
+            x:Name="cmb6"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="60"
+            Margin="361,423,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Image
+            x:Name="img1"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Width="170"
+            Height="100"
+            Margin="40,214,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Image
+            x:Name="img2"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Width="170"
+            Height="100"
+            Margin="361,214,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Image
+            x:Name="img3"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="100"
+            Margin="40,135,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Image
+            x:Name="img4"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="100"
+            Margin="361,135,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Image
+            x:Name="img5"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="100"
+            Margin="40,309,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
+        <Image
+            x:Name="img6"
+            Grid.Row="3"
+            Grid.Column="1"
+            Width="170"
+            Height="100"
+            Margin="361,309,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top" />
     </Grid>
 </Window>

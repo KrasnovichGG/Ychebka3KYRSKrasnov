@@ -19,9 +19,16 @@ namespace Ychebka3KYRSKrasnov
     /// </summary>
     public partial class ThirdBlock : Window
     {
-        public ThirdBlock()
+        Home Home { get; set; }
+        public ThirdBlock(Home home)
         {
             InitializeComponent();
+            Home = home;
+            var houseroof = (from cust in MainWindow.house.Home_Roof
+             join ph in MainWindow.house.Roof_of_the_house on cust.ID_Roof equals ph.ID_Roof
+             where cust.ID_Home == Home.ID_Home
+             select new { ph.Roof_Color }).ToList();
+            cmb1.ItemsSource = houseroof;
         }
     }
 }
