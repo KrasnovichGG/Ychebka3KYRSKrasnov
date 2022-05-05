@@ -36,5 +36,17 @@ namespace Ychebka3KYRSKrasnov
             ThirdBlock thirdBlock = new ThirdBlock(MainWindow.house.Home.Where(x=>x.ID_Home == 1).FirstOrDefault());
             thirdBlock.Show();
         }
+
+        private void Image_2Home_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            home2 home2 = new home2(MainWindow.house.Home.Where(x => x.ID_Home == 10).FirstOrDefault());
+            home2.Show();
+        }
+
+        private void Image_3Home_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+           home3 home3 = new home3(MainWindow.house.Home.Where(x => x.ID_Home == 9).FirstOrDefault());
+           home3.Show();
+        }
     }
 }

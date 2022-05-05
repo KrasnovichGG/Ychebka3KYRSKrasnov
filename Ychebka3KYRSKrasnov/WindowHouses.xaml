@@ -64,9 +64,7 @@
                 FontSize="72"
                 Foreground="White" />
             <Image
-                PreviewMouseDown="Image_1Home_PreviewMouseDown"
                 x:Name="Image_1Home"
-                
                 Grid.Row="2"
                 Grid.RowSpan="2"
                 Width="632"
@@ -74,6 +72,7 @@
                 Margin="0,179,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
+                PreviewMouseDown="Image_1Home_PreviewMouseDown"
                 Source="/KYB.png" />
             <Image
                 x:Name="Image_2Home"
@@ -85,6 +84,7 @@
                 Margin="0,179,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
+                PreviewMouseDown="Image_2Home_PreviewMouseDown"
                 Source="/MOB.png" />
             <Image
                 x:Name="Image_3Home"
@@ -95,6 +95,7 @@
                 Margin="0,627,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
+                 PreviewMouseDown="Image_3Home_PreviewMouseDown"
                 Source="/MS.png" />
             <Image
                 x:Name="Image_4Home"

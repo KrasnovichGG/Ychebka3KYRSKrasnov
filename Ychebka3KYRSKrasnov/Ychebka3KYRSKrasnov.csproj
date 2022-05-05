@@ -83,6 +83,12 @@
     <Compile Include="Home.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
+    <Compile Include="home2.xaml.cs">
+      <DependentUpon>home2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="home3.xaml.cs">
+      <DependentUpon>home3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Home_Balki.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
@@ -158,6 +164,7 @@
     <Compile Include="Plaster_for_the_house.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
+    <Compile Include="QQ.cs" />
     <Compile Include="Railing_For_Home.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
@@ -191,6 +198,14 @@
     </Compile>
     <Compile Include="SmoothScrollViewer.cs" />
     <Page Include="AddHomeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="home2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="home3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -309,6 +324,9 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Home2.png" />
+    <Resource Include="Home1.png" />
+    <Resource Include="Home3.png" />
     <Content Include="Modelhome1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Modelhome1.edmx</DependentUpon>
