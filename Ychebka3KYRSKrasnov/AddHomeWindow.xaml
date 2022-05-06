@@ -69,6 +69,7 @@
             FontFamily="Stencil"
             FontSize="24"
             TextAlignment="Center"
+            TextChanged="TxtbCoolorobject_TextChanged"
             TextWrapping="Wrap" />
         <Label
             x:Name="LB_color"
@@ -78,6 +79,7 @@
             VerticalAlignment="Top"
             Content="Enter object color"
             FontFamily="Stencil"
+            
             Foreground="White" />
         <TextBox
             x:Name="TxtBpice"
@@ -90,6 +92,7 @@
             FontFamily="Stencil"
             FontSize="24"
             TextAlignment="Center"
+            
             TextWrapping="Wrap" />
         <Label
             x:Name="LB__price"

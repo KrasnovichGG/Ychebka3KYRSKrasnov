@@ -66,6 +66,7 @@ namespace Ychebka3KYRSKrasnov
 
         private void BtnAddToDB_Click(object sender, RoutedEventArgs e)
         {
+            //proverkacifri();
             OpenFileDialog openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
@@ -260,6 +261,32 @@ namespace Ychebka3KYRSKrasnov
             encoder.Save(memStream);
             return memStream.ToArray();
         }
+
+        private void TxtbCoolorobject_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string Str = TxtbCoolorobject.Text.Trim();
+            int Num;
+            bool isNum = int.TryParse(Str, out Num);
+            if (isNum)
+            {
+                MessageBox.Show("Только символы,но не цифры!");
+                TxtbCoolorobject.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Пиши!");
+            }
+        }
+        //public void proverkacifri()
+        //{
+        //    string Str = TxtbCoolorobject.Text.Trim();
+        //    int Num;
+        //    bool isNum = int.TryParse(Str, out Num);
+        //    if (isNum)
+        //    {
+        //        MessageBox.Show("Вводите в колонку Цвета символы,но не цифры!");
+        //    }
+        //}
     }
 
     static class Extensions
