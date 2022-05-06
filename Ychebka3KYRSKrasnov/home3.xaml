@@ -52,26 +52,25 @@
                 Source="/Home3.png" />
             <TextBlock
                 x:Name="TXTBOPIS"
-                Grid.Row="2"
+                Grid.Row="1"
                 Grid.ColumnSpan="3"
                 Width="596"
-                Height="83"
-                Margin="102,77,0,0"
+                Height="235"
+                Margin="102,516,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 FontFamily="Sitka Small"
-                FontSize="20"
                 Foreground="White"
-                Text="Дом вашей мечты который всем своим видом будет показывать что вы очень богатый и ваш батя решит любые вопросы"
+                Text="Дом для семейного пространства,окунитесь в блаженство и красоту этих комнат стен вообщем вам понравится"
                 TextAlignment="Center"
-                TextWrapping="Wrap" />
+                TextWrapping="Wrap" FontSize="36" Grid.RowSpan="2" />
             <TextBlock
                 x:Name="TXTBVIBOR"
                 Grid.Row="2"
                 Grid.Column="1"
                 Width="446"
                 Height="120"
-                Margin="70,201,0,0"
+                Margin="70,229,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 FontFamily="Sitka Small"
@@ -90,7 +89,7 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 DisplayMemberPath="Balki_House.Color_Balka"
-                SelectionChanged="cmb1_SelectionChanged" />
+                SelectionChanged="cmb1_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
             <ComboBox
                 x:Name="cmb2"
                 Grid.Row="4"
@@ -99,7 +98,7 @@
                 Margin="360,114,39,0"
                 VerticalAlignment="Top"
                 DisplayMemberPath="House_Facade.Facade_Color"
-                SelectionChanged="cmb2_SelectionChanged" />
+                SelectionChanged="cmb2_SelectionChanged" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
             <ComboBox
                 x:Name="cmb3"
                 Grid.Row="4"

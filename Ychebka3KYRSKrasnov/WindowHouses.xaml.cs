@@ -22,6 +22,10 @@ namespace Ychebka3KYRSKrasnov
         public WindowHouses()
         {
             InitializeComponent();
+            if (MainWindow.authUser.ID_Role == 2)
+            {
+                Btn_Add_Home.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void Btn_Add_Home_Click(object sender, RoutedEventArgs e)

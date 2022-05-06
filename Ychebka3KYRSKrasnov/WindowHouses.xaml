@@ -8,31 +8,29 @@
     x:Name="WinH"
     Title="WindowHouses"
     Width="1920"
-    Height="2900"
+    Height="2116"
     Background="Black"
     ResizeMode="NoResize"
     WindowState="Maximized"
     mc:Ignorable="d">
     <ScrollViewer>
-        <Grid x:Name="GridHous" Height="2884">
+        <Grid x:Name="GridHous" Height="2785">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="963*" />
                 <ColumnDefinition Width="940*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="179*" />
-                <RowDefinition Height="199*" />
-                <RowDefinition Height="179*" />
-                <RowDefinition Height="628*" />
-                <RowDefinition Height="672*" />
-                <RowDefinition Height="727*" />
-                <RowDefinition Height="181*" />
-                <RowDefinition Height="118*" />
+                <RowDefinition Height="171*" />
+                <RowDefinition Height="190*" />
+                <RowDefinition Height="171*" />
+                <RowDefinition Height="601*" />
+                <RowDefinition Height="1623*" />
             </Grid.RowDefinitions>
             <Label
                 x:Name="LB_BuyingHouse"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
+                Margin="0,0,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Content="Купить Дом"
@@ -44,7 +42,8 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                HorizontalAlignment="Center"
+                Margin="48,0,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 FontFamily="Sitka Small"
                 FontSize="48"
@@ -65,66 +64,35 @@
                 Foreground="White" />
             <Image
                 x:Name="Image_1Home"
-                Grid.Row="2"
-                Grid.RowSpan="2"
+                Grid.Row="3"
                 Width="632"
                 Height="503"
-                Margin="0,179,0,0"
+                Margin="0,4,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 PreviewMouseDown="Image_1Home_PreviewMouseDown"
                 Source="/KYB.png" />
             <Image
                 x:Name="Image_2Home"
-                Grid.Row="2"
-                Grid.RowSpan="2"
+                Grid.Row="3"
                 Grid.Column="1"
                 Width="632"
                 Height="503"
-                Margin="0,179,0,0"
+                Margin="0,4,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 PreviewMouseDown="Image_2Home_PreviewMouseDown"
                 Source="/Home2.1.png" />
             <Image
                 x:Name="Image_3Home"
-                Grid.Row="3"
-                Grid.RowSpan="2"
+                Grid.Row="4"
                 Width="641"
                 Height="534"
-                Margin="0,627,0,0"
+                Margin="0,15,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 PreviewMouseDown="Image_3Home_PreviewMouseDown"
                 Source="/MS.png" />
-            <Image
-                x:Name="Image_4Home"
-                Grid.Row="3"
-                Grid.RowSpan="2"
-                Grid.Column="1"
-                Width="630"
-                Height="522"
-                Margin="0,627,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Source="/S.png" />
-            <Image
-                x:Name="Image_5Home"
-                Grid.Row="5"
-                Width="630"
-                Height="527"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Source="/MKS.png" />
-            <Image
-                x:Name="Image_6Home"
-                Grid.Row="5"
-                Grid.Column="1"
-                Width="632"
-                Height="525"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Source="/ODO.png" />
             <Label
                 x:Name="LB_HOME1"
                 Grid.Row="3"
@@ -162,53 +130,15 @@
                 FontFamily="Segoe UI Semibold"
                 FontSize="48"
                 Foreground="White" />
-            <Label
-                x:Name="LB_HOM4"
-                Grid.Row="4"
-                Grid.Column="1"
-                Width="403"
-                Height="74"
-                Margin="0,550,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Content="Дом &quot;Семейный&quot;"
-                FontFamily="Segoe UI Semibold"
-                FontSize="48"
-                Foreground="White" />
-            <Label
-                x:Name="LB_HOM5"
-                Grid.Row="5"
-                Width="670"
-                Height="74"
-                Margin="0,550,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Content="Дом &quot;Мага, как это строить?&quot;"
-                FontFamily="Segoe UI Semibold"
-                FontSize="48"
-                Foreground="White" />
-            <Label
-                x:Name="LB_HOM6"
-                Grid.Row="5"
-                Grid.Column="1"
-                Width="652"
-                Height="74"
-                Margin="0,550,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Content="Дом &quot;Дорого очень дорого&quot;"
-                FontFamily="Segoe UI Semibold"
-                FontSize="48"
-                Foreground="White" />
             <Button
                 x:Name="Btn_Add_Home"
-                Grid.Row="6"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
+                Grid.Row="4"
+                Grid.Column="1"
                 Width="260"
                 Height="103"
+                Margin="0,262,0,0"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Center"
+                VerticalAlignment="Top"
                 Background="#FF1DF2DC"
                 Click="Btn_Add_Home_Click"
                 Content="Add home"

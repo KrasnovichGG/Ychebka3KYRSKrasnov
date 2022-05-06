@@ -69,7 +69,7 @@
             FontFamily="Stencil"
             FontSize="24"
             TextAlignment="Center"
-            TextChanged="TxtbCoolorobject_TextChanged"
+            
             TextWrapping="Wrap" />
         <Label
             x:Name="LB_color"
