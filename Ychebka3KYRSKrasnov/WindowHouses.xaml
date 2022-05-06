@@ -85,7 +85,7 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 PreviewMouseDown="Image_2Home_PreviewMouseDown"
-                Source="/MOB.png" />
+                Source="/Home2.1.png" />
             <Image
                 x:Name="Image_3Home"
                 Grid.Row="3"
@@ -95,7 +95,7 @@
                 Margin="0,627,0,0"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
-                 PreviewMouseDown="Image_3Home_PreviewMouseDown"
+                PreviewMouseDown="Image_3Home_PreviewMouseDown"
                 Source="/MS.png" />
             <Image
                 x:Name="Image_4Home"

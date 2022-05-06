@@ -329,6 +329,8 @@
     <Resource Include="Home1.png" />
     <Resource Include="Home3.png" />
     <Resource Include="Main.jpg" />
+    <Resource Include="2home.jpg" />
+    <Resource Include="Home2.1.png" />
     <Content Include="Modelhome1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Modelhome1.edmx</DependentUpon>
