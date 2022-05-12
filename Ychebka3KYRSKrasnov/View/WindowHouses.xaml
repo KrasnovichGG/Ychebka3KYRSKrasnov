@@ -1,0 +1,150 @@
+﻿<Window
+    x:Class="Ychebka3KYRSKrasnov.WindowHouses"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Name="WinH"
+    Title="WindowHouses"
+    Width="1920"
+    Height="2116"
+    Background="Black"
+    ResizeMode="NoResize"
+    WindowState="Maximized"
+    mc:Ignorable="d">
+    <ScrollViewer>
+        <Grid x:Name="GridHous" Height="2785">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="963*" />
+                <ColumnDefinition Width="940*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="171*" />
+                <RowDefinition Height="190*" />
+                <RowDefinition Height="171*" />
+                <RowDefinition Height="601*" />
+                <RowDefinition Height="1623*" />
+            </Grid.RowDefinitions>
+            <Label
+                x:Name="LB_BuyingHouse"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="0,0,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Content="Купить Дом"
+                FontFamily="Segoe UI Black"
+                FontSize="72"
+                Foreground="White" />
+            <TextBlock
+                x:Name="TxTBlock"
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="48,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                FontFamily="Sitka Small"
+                FontSize="48"
+                Foreground="White"
+                Text="Здесь вы сможете выбрать себе дом из выбранных вариантов,и позже изменить его по машему вкусу и стилю!"
+                TextAlignment="Center"
+                TextWrapping="Wrap" />
+            <Label
+                x:Name="LB_OverHouses"
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
+                Margin="0,9,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Наши дома"
+                FontFamily="Segoe UI Black"
+                FontSize="72"
+                Foreground="White" />
+            <Image
+                x:Name="Image_1Home"
+                Grid.Row="3"
+                Width="632"
+                Height="503"
+                Margin="0,4,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                PreviewMouseDown="Image_1Home_PreviewMouseDown"
+                Source="/Images/KYB.png" />
+            <Image
+                x:Name="Image_2Home"
+                Grid.Row="3"
+                Grid.Column="1"
+                Width="632"
+                Height="503"
+                Margin="0,4,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                PreviewMouseDown="Image_2Home_PreviewMouseDown"
+                Source="/Images/Home2.1.png" />
+            <Image
+                x:Name="Image_3Home"
+                Grid.Row="4"
+                Width="641"
+                Height="534"
+                Margin="0,15,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                PreviewMouseDown="Image_3Home_PreviewMouseDown"
+                Source="/Images/MS.png" />
+            <Label
+                x:Name="LB_HOME1"
+                Grid.Row="3"
+                Width="637"
+                Height="74"
+                Margin="0,510,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Каникулы у бабушки&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Label
+                x:Name="LB_HOME2"
+                Grid.Row="3"
+                Grid.Column="1"
+                Width="645"
+                Height="74"
+                Margin="0,510,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Мой папа бизнесмен&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Label
+                x:Name="LB_HOM3"
+                Grid.Row="4"
+                Width="473"
+                Height="74"
+                Margin="0,550,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Content="Дом &quot;Мечта соседа&quot;"
+                FontFamily="Segoe UI Semibold"
+                FontSize="48"
+                Foreground="White" />
+            <Button
+                x:Name="Btn_Add_Home"
+                Grid.Row="4"
+                Grid.Column="1"
+                Width="260"
+                Height="103"
+                Margin="0,262,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="#FF1DF2DC"
+                Click="Btn_Add_Home_Click"
+                Content="Add home"
+                Cursor="Hand"
+                FontFamily="Stencil"
+                FontSize="24" />
+        </Grid>
+    </ScrollViewer>
+</Window>

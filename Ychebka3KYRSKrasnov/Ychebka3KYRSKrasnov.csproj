@@ -65,155 +65,151 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddHomeWindow.xaml.cs">
-      <DependentUpon>AddHomeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Auth.cs">
+    <Compile Include="db\Auth.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Balki_House.cs">
+    <Compile Include="db\Balki_House.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Door_For_House.cs">
+    <Compile Include="db\Door_For_House.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Drain_For_Home.cs">
+    <Compile Include="db\Drain_For_Home.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="db\Home.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="home2.xaml.cs">
-      <DependentUpon>home2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="home3.xaml.cs">
-      <DependentUpon>home3.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Home_Balki.cs">
+    <Compile Include="db\Home_Balki.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Cokol.cs">
+    <Compile Include="db\Home_Cokol.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Door.cs">
+    <Compile Include="db\Home_Door.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Drain.cs">
+    <Compile Include="db\Home_Drain.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Fasad.cs">
+    <Compile Include="db\Home_Fasad.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Pavers.cs">
+    <Compile Include="db\Home_Pavers.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Plaster.cs">
+    <Compile Include="db\Home_Plaster.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Railing.cs">
+    <Compile Include="db\Home_Railing.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Roof.cs">
+    <Compile Include="db\Home_Roof.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Solution.cs">
+    <Compile Include="db\Home_Solution.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Steps.cs">
+    <Compile Include="db\Home_Steps.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Terrace.cs">
+    <Compile Include="db\Home_Terrace.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Home_Window.cs">
+    <Compile Include="db\Home_Window.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="House_Basement_Cokol_.cs">
+    <Compile Include="db\House_Basement_Cokol_.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="House_Facade.cs">
+    <Compile Include="db\House_Facade.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="House_Steps.cs">
+    <Compile Include="db\House_Steps.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="House_Windows.cs">
+    <Compile Include="db\House_Windows.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelhome1.Context.cs">
+    <Compile Include="db\Modelhome1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Modelhome1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelhome1.cs">
+    <Compile Include="db\Modelhome1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Modelhome1.Designer.cs">
+    <Compile Include="db\Modelhome1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Modelhome1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Pavers_House.cs">
+    <Compile Include="db\Pavers_House.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Person.cs">
+    <Compile Include="db\Person.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Plaster_for_the_house.cs">
+    <Compile Include="db\Plaster_for_the_house.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="QQ.cs" />
-    <Compile Include="Railing_For_Home.cs">
+    <Compile Include="db\Railing_For_Home.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Role.cs">
+    <Compile Include="db\Role.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Roof_of_the_house.cs">
+    <Compile Include="db\Roof_of_the_house.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ScrollViewerExtend.cs" />
-    <Compile Include="LoginWindow.xaml.cs">
+    <Compile Include="db\Terrace_Home.cs">
+      <DependentUpon>Modelhome1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db\Turnkey_solution_for_home.cs">
+      <DependentUpon>Modelhome1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddHomeWindow.xaml.cs">
+      <DependentUpon>AddHomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\home2.xaml.cs">
+      <DependentUpon>home2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\home3.xaml.cs">
+      <DependentUpon>home3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\ScrollViewerExtend.cs" />
+    <Compile Include="View\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RegWindow.xaml.cs">
+    <Compile Include="View\RegWindow.xaml.cs">
       <DependentUpon>RegWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>Modelhome1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Terrace_Home.cs">
-      <DependentUpon>Modelhome1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ThirdBlock.xaml.cs">
+    <Compile Include="View\ThirdBlock.xaml.cs">
       <DependentUpon>ThirdBlock.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Turnkey_solution_for_home.cs">
-      <DependentUpon>Modelhome1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="WindowHouses.xaml.cs">
+    <Compile Include="View\WindowHouses.xaml.cs">
       <DependentUpon>WindowHouses.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SmoothScrollViewer.cs" />
-    <Page Include="AddHomeWindow.xaml">
+    <Compile Include="CustomControls\SmoothScrollViewer.cs" />
+    <Page Include="View\AddHomeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="home2.xaml">
+    <Page Include="View\home2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="home3.xaml">
+    <Page Include="View\home3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LoginWindow.xaml">
+    <Page Include="View\LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -221,19 +217,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="View\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="RegWindow.xaml">
+    <Page Include="View\RegWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ThirdBlock.xaml">
+    <Page Include="View\ThirdBlock.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="WindowHouses.xaml">
+    <Page Include="View\WindowHouses.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -256,11 +252,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Modelhome1.edmx">
+    <EntityDeploy Include="db\Modelhome1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Modelhome1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Modelhome1.edmx.diagram">
+    <None Include="db\Modelhome1.edmx.diagram">
       <DependentUpon>Modelhome1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
@@ -300,43 +296,46 @@
     <Resource Include="Images\BeautifulHome2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="KYB.png" />
+    <Resource Include="Images\KYB.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MOB.png" />
+    <Resource Include="Images\MOB.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MS.png" />
+    <Resource Include="Images\MS.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="S.png" />
+    <Resource Include="Images\S.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="MKS.png" />
+    <Resource Include="Images\MKS.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ODO.png" />
+    <Resource Include="Images\ODO.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ODO1.png" />
+    <Resource Include="Images\ODO1.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Reg.jpg" />
-    <Resource Include="Home2.png" />
-    <Resource Include="Home1.png" />
-    <Resource Include="Home3.png" />
-    <Resource Include="Main.jpg" />
-    <Resource Include="2home.jpg" />
-    <Resource Include="Home2.1.png" />
-    <Content Include="Modelhome1.Context.tt">
+    <Resource Include="Images\Reg.jpg" />
+    <Resource Include="Images\Home2.png" />
+    <Resource Include="Images\Home1.png" />
+    <Resource Include="Images\Home3.png" />
+    <Resource Include="Images\Main.jpg" />
+    <Resource Include="Images\2home.jpg" />
+    <Resource Include="Images\Home2.1.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="db\Modelhome1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Modelhome1.edmx</DependentUpon>
       <LastGenOutput>Modelhome1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Modelhome1.tt">
+    <Content Include="db\Modelhome1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Modelhome1.edmx</DependentUpon>
       <LastGenOutput>Modelhome1.cs</LastGenOutput>
