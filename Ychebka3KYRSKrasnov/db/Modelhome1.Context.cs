@@ -55,5 +55,6 @@ namespace Ychebka3KYRSKrasnov.db
         public virtual DbSet<Roof_of_the_house> Roof_of_the_house { get; set; }
         public virtual DbSet<Terrace_Home> Terrace_Home { get; set; }
         public virtual DbSet<Turnkey_solution_for_home> Turnkey_solution_for_home { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }

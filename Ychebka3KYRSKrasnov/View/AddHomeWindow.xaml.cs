@@ -4,16 +4,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Ychebka3KYRSKrasnov.db;
 
 namespace Ychebka3KYRSKrasnov
@@ -78,7 +71,7 @@ namespace Ychebka3KYRSKrasnov
                     House_Facade house_Facade = new House_Facade()
                     {
                         Image_Facade = getJPGFromImageControl(Image_Vibor.Source as BitmapImage),
-                        Price_Facade = TxtBpice.Text,
+                        Price_Facade = Convert.ToDecimal(TxtBpice.Text),
                         Facade_Color =  TxtbCoolorobject.Text
                     };
                     MainWindow.house.House_Facade.Add(house_Facade);

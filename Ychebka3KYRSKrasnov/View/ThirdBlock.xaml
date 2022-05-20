@@ -11,16 +11,16 @@
     Height="2000"
     Background="Black"
     ResizeMode="NoResize"
+    WindowStartupLocation="CenterOwner"
     WindowState="Normal"
     mc:Ignorable="d">
     <ScrollViewer>
-
-
         <Grid x:Name="GridThird">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="112*" />
-                <ColumnDefinition Width="595*" />
-                <ColumnDefinition Width="112*" />
+                <ColumnDefinition Width="107*" />
+                <ColumnDefinition Width="283*" />
+                <ColumnDefinition Width="286*" />
+                <ColumnDefinition Width="107*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="148*" />
@@ -34,12 +34,13 @@
             <Label
                 x:Name="LB_Home1"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="491"
                 Height="64"
-                Margin="0,74,0,0"
-                HorizontalAlignment="Center"
+                Margin="39,74,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Content="Дом &quot;Каникулы у бабушки&quot;"
+                Content="{Binding Path=Name}"
                 FontFamily="Segoe UI Semibold"
                 FontSize="36"
                 Foreground="White" />
@@ -47,16 +48,17 @@
                 x:Name="IMGH1"
                 Grid.Row="1"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="519"
                 Height="425"
                 Margin="29,0,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                Source="/Images/Home1.png" />
+                Source="{Binding Path=Image_Home}" />
             <TextBlock
                 x:Name="TXTBOPIS"
                 Grid.Row="2"
-                Grid.ColumnSpan="3"
+                Grid.ColumnSpan="4"
                 Width="596"
                 Height="50"
                 Margin="102,77,0,0"
@@ -65,13 +67,14 @@
                 FontFamily="Sitka Small"
                 FontSize="20"
                 Foreground="White"
-                Text="Дом вашей бабушки,будет выполнен по вашему дизайну!"
+                Text="{Binding Path=Opisanie}"
                 TextAlignment="Center"
                 TextWrapping="Wrap" />
             <TextBlock
                 x:Name="TXTBVIBOR"
                 Grid.Row="2"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="446"
                 Height="120"
                 Margin="70,229,0,0"
@@ -89,19 +92,19 @@
                 Grid.Column="1"
                 Width="170"
                 Height="60"
-                Margin="40,114,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,114,0,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 DisplayMemberPath="Roof_of_the_house.Roof_Color"
                 SelectionChanged="cmb1_SelectionChanged" />
             <ComboBox
                 x:Name="cmb2"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="60"
-                Margin="360,114,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,114,0,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 DisplayMemberPath="House_Basement_Cokol_.Basement_Color"
                 SelectionChanged="cmb2_SelectionChanged" />
@@ -111,19 +114,19 @@
                 Grid.Column="1"
                 Width="170"
                 Height="60"
-                Margin="40,328,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,328,0,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 DisplayMemberPath="House_Facade.Facade_Color"
                 SelectionChanged="cmb3_SelectionChanged" />
             <ComboBox
                 x:Name="cmb4"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="60"
-                Margin="360,328,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,328,0,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 DisplayMemberPath="Pavers_House.Pavers_Color"
                 SelectionChanged="cmb4_SelectionChanged" />
@@ -133,19 +136,19 @@
                 Grid.Column="1"
                 Width="170"
                 Height="60"
-                Margin="40,516,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,516,0,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 DisplayMemberPath="House_Windows.Window_Color"
                 SelectionChanged="cmb5_SelectionChanged" />
             <ComboBox
                 x:Name="cmb6"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="60"
-                Margin="361,516,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,516,0,0"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Top"
                 DisplayMemberPath="Drain_For_Home.Drain_Color"
                 SelectionChanged="cmb6_SelectionChanged" />
@@ -155,17 +158,17 @@
                 Grid.Column="1"
                 Width="170"
                 Height="100"
-                Margin="40,10,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,10,0,0"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img2"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="100"
-                Margin="360,10,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,10,0,0"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img3"
@@ -173,17 +176,17 @@
                 Grid.Column="1"
                 Width="170"
                 Height="100"
-                Margin="40,210,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,210,0,0"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img4"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="100"
-                Margin="361,210,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,210,0,0"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img5"
@@ -191,26 +194,27 @@
                 Grid.Column="1"
                 Width="170"
                 Height="100"
-                Margin="40,397,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,410,0,0"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Top" />
             <Image
                 x:Name="img6"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Width="170"
                 Height="100"
-                Margin="360,397,0,0"
-                HorizontalAlignment="Left"
+                Margin="0,410,0,0"
+                HorizontalAlignment="Stretch"
                 VerticalAlignment="Top" />
             <Button
                 x:Name="btnback"
-                Grid.Row="6"
-                Grid.Column="1"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
                 Width="79"
                 Height="35"
                 Margin="0,5,0,0"
-                HorizontalAlignment="Center"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="btnback_Click"
                 Content="Back" />
@@ -218,10 +222,11 @@
                 x:Name="btnOfotmitHome"
                 Grid.Row="5"
                 Grid.Column="1"
+                Grid.ColumnSpan="2"
                 Width="150"
                 Height="80"
-                Margin="0,66,0,0"
-                HorizontalAlignment="Center"
+                Margin="210,66,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Click="btnOfotmitHome_Click"
                 Content="Byu house" />
@@ -237,9 +242,9 @@
             <Label
                 x:Name="LB_cokol"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Grid.ColumnSpan="2"
-                Margin="530,132,0,0"
+                Margin="247,132,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Цоколь"
@@ -256,9 +261,9 @@
             <Label
                 x:Name="LB_pavers"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Grid.ColumnSpan="2"
-                Margin="534,346,0,0"
+                Margin="251,346,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Брусчатска"
@@ -275,9 +280,9 @@
             <Label
                 x:Name="LB_drain"
                 Grid.Row="4"
-                Grid.Column="1"
+                Grid.Column="2"
                 Grid.ColumnSpan="2"
-                Margin="550,534,0,0"
+                Margin="267,534,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Content="Водостоки"

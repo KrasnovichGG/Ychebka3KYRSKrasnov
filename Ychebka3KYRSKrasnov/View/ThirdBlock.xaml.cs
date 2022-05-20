@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using Ychebka3KYRSKrasnov.db;
+using System.Timers;
+using System.Windows.Media.Imaging;
 
 namespace Ychebka3KYRSKrasnov
 {
@@ -27,25 +20,36 @@ namespace Ychebka3KYRSKrasnov
         {
             InitializeComponent();
             Home = home;
+            DataContext = Home;
             VivodIZBd();
-            
+        }
+
+        private void Normilize()
+        {
+            cmb1.Visibility = cmb1.HasItems ? Visibility.Visible : Visibility.Collapsed;
+            cmb2.Visibility = cmb2.HasItems ? Visibility.Visible : Visibility.Collapsed;
+            cmb3.Visibility = cmb3.HasItems ? Visibility.Visible : Visibility.Collapsed;
+            cmb4.Visibility = cmb4.HasItems ? Visibility.Visible : Visibility.Collapsed;
+            cmb5.Visibility = cmb5.HasItems ? Visibility.Visible : Visibility.Collapsed;
+            cmb6.Visibility = cmb6.HasItems ? Visibility.Visible : Visibility.Collapsed;
         }
         public void VivodIZBd()
         {
-            
             cmb1.ItemsSource = MainWindow.house.Home_Roof.Where(x => x.ID_Home == Home.ID_Home).ToList();
             cmb2.ItemsSource = MainWindow.house.Home_Cokol.Where(g => g.ID_Home == Home.ID_Home).ToList();
             cmb3.ItemsSource = MainWindow.house.Home_Fasad.Where(c => c.ID_Home == Home.ID_Home).ToList();
             cmb4.ItemsSource = MainWindow.house.Home_Pavers.Where(j => j.ID_Home == Home.ID_Home).ToList();
             cmb5.ItemsSource = MainWindow.house.Home_Window.Where(k => k.ID_Home == Home.ID_Home).ToList();
             cmb6.ItemsSource = MainWindow.house.Home_Drain.Where(l => l.ID_Home == Home.ID_Home).ToList();
+            //Normilize();
         }
-        Home_Roof tt1;
-        Home_Fasad tt2;
-        Home_Cokol tt3;
-        Home_Pavers tt4;
-        Home_Window tt5;
-        Home_Drain tt6;
+
+        Home_Roof tt1 = new Home_Roof() { Home = new Home(), Roof_of_the_house = new Roof_of_the_house() { Price_Roof = 0} };
+        Home_Fasad tt2 = new Home_Fasad() { Home = new Home(), House_Facade = new House_Facade() { Price_Facade = 0 } };
+        Home_Cokol tt3 = new Home_Cokol() { Home = new Home(), House_Basement_Cokol_ = new House_Basement_Cokol_() { Price_Basement = 0 } };
+        Home_Pavers tt4 = new Home_Pavers() { Home = new Home(), Pavers_House = new Pavers_House() { Price_Pavers = 0 } };
+        Home_Window tt5 = new Home_Window() { Home = new Home(), House_Windows = new House_Windows() { Price_Roof = 0 } };
+        Home_Drain tt6 = new Home_Drain() { Home = new Home(), Drain_For_Home = new Drain_For_Home() { Price_Drain = 0 } };
         private void cmb1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             tt1 = cmb1.SelectedItem as Home_Roof;

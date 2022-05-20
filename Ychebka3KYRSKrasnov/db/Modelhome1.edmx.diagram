@@ -63,6 +63,7 @@
         <AssociationConnector Association="DataBaseHomeModel.FK_Home_Steps_House_Steps" ManuallyRouted="false" />
         <AssociationConnector Association="DataBaseHomeModel.FK_Home_Terrace_Terrace_Home" ManuallyRouted="false" />
         <AssociationConnector Association="DataBaseHomeModel.FK_Home_Window_House_Windows" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DataBaseHomeModel.sysdiagrams" Width="1.5" PointX="5.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

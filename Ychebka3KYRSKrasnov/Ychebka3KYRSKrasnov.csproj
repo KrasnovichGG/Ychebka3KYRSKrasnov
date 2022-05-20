@@ -164,6 +164,9 @@
     <Compile Include="db\Roof_of_the_house.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
+    <Compile Include="db\sysdiagrams.cs">
+      <DependentUpon>Modelhome1.tt</DependentUpon>
+    </Compile>
     <Compile Include="db\Terrace_Home.cs">
       <DependentUpon>Modelhome1.tt</DependentUpon>
     </Compile>
@@ -172,12 +175,6 @@
     </Compile>
     <Compile Include="View\AddHomeWindow.xaml.cs">
       <DependentUpon>AddHomeWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\home2.xaml.cs">
-      <DependentUpon>home2.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\home3.xaml.cs">
-      <DependentUpon>home3.xaml</DependentUpon>
     </Compile>
     <Compile Include="CustomControls\ScrollViewerExtend.cs" />
     <Compile Include="View\LoginWindow.xaml.cs">
@@ -194,14 +191,6 @@
     </Compile>
     <Compile Include="CustomControls\SmoothScrollViewer.cs" />
     <Page Include="View\AddHomeWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\home2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\home3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

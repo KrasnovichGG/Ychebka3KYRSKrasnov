@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Ychebka3KYRSKrasnov.db;
 
 namespace Ychebka3KYRSKrasnov
 {
@@ -26,6 +27,21 @@ namespace Ychebka3KYRSKrasnov
             {
                 Btn_Add_Home.Visibility = Visibility.Collapsed;
             }
+            List<Home> homes = MainWindow.house.Home.ToList();
+            List<Home> homesForFirstLstView = new List<Home>();
+            List<Home> homesForSecondLstView = new List<Home>();
+            int count = (homes.Count) / 2;
+            for (int i = 0; i < count; i++)
+            {
+                homesForFirstLstView.Add(homes[i]);
+            }
+            for (int i = count; i < homes.Count; i++)
+            {
+                homesForSecondLstView.Add(homes[i]);
+            }
+
+            HousesLstView1.ItemsSource = homesForFirstLstView;
+            HousesLstView2.ItemsSource = homesForSecondLstView;
         }
 
         private void Btn_Add_Home_Click(object sender, RoutedEventArgs e)
@@ -43,14 +59,21 @@ namespace Ychebka3KYRSKrasnov
 
         private void Image_2Home_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-            home2 home2 = new home2(MainWindow.house.Home.Where(x => x.ID_Home == 10).FirstOrDefault());
-            home2.Show();
+            ThirdBlock thirdBlock = new ThirdBlock(MainWindow.house.Home.Where(x => x.ID_Home == 8).FirstOrDefault());
+            thirdBlock.Show();
         }
 
         private void Image_3Home_PreviewMouseDown(object sender, MouseButtonEventArgs e)
         {
-           home3 home3 = new home3(MainWindow.house.Home.Where(x => x.ID_Home == 9).FirstOrDefault());
-           home3.Show();
+            ThirdBlock thirdBlock = new ThirdBlock(MainWindow.house.Home.Where(x => x.ID_Home == 10).FirstOrDefault());
+            thirdBlock.Show();
+        }
+
+        private void HousesLstView1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var home = (Home)(sender as ListView).SelectedItem;
+            ThirdBlock thirdBlock = new ThirdBlock(home);
+            thirdBlock.Show();
         }
     }
 }

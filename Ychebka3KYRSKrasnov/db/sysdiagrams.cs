@@ -12,20 +12,12 @@ namespace Ychebka3KYRSKrasnov.db
     using System;
     using System.Collections.Generic;
     
-    public partial class House_Facade
+    public partial class sysdiagrams
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public House_Facade()
-        {
-            this.Home_Fasad = new HashSet<Home_Fasad>();
-        }
-    
-        public int ID_Facade { get; set; }
-        public string Facade_Color { get; set; }
-        public byte[] Image_Facade { get; set; }
-        public Nullable<decimal> Price_Facade { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Home_Fasad> Home_Fasad { get; set; }
+        public string name { get; set; }
+        public int principal_id { get; set; }
+        public int diagram_id { get; set; }
+        public Nullable<int> version { get; set; }
+        public byte[] definition { get; set; }
     }
 }

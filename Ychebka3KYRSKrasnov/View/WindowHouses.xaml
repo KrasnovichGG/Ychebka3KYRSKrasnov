@@ -14,24 +14,83 @@
     WindowState="Maximized"
     mc:Ignorable="d">
     <ScrollViewer>
-        <Grid x:Name="GridHous" Height="2785">
+        <Grid x:Name="GridHous" Height="2090">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="963*" />
                 <ColumnDefinition Width="940*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="171*" />
-                <RowDefinition Height="190*" />
-                <RowDefinition Height="171*" />
-                <RowDefinition Height="601*" />
-                <RowDefinition Height="1623*" />
+                <RowDefinition Height="213*" />
+                <RowDefinition Height="491*" />
+                <RowDefinition Height="1265*" />
+                <RowDefinition Height="121*" />
             </Grid.RowDefinitions>
+
+            <ScrollViewer
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="50,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <ListView x:Name="HousesLstView1" Background="Black" SelectionChanged="HousesLstView1_SelectionChanged">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Image
+                                        Width="500"
+                                        Height="400"
+                                        HorizontalAlignment="Center"
+                                        Source="{Binding Image_Home}" />
+                                    <Label
+                                        Height="74"
+                                        HorizontalAlignment="Stretch"
+                                        Content="{Binding Name}"
+                                        FontFamily="Segoe UI Semibold"
+                                        FontSize="48"
+                                        Foreground="White" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <ListView
+                        x:Name="HousesLstView2"
+                        SelectionChanged="HousesLstView1_SelectionChanged"
+                        Grid.Column="1"
+                        Background="Black">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Image
+                                        Width="500"
+                                        Height="400"
+                                        HorizontalAlignment="Center"
+                                        Source="{Binding Image_Home}" />
+                                    <Label
+                                        Height="74"
+                                        HorizontalAlignment="Stretch"
+                                        Content="{Binding Name}"
+                                        FontFamily="Segoe UI Semibold"
+                                        FontSize="48"
+                                        Foreground="White" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </ScrollViewer>
             <Label
                 x:Name="LB_BuyingHouse"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Margin="0,0,0,0"
-                HorizontalAlignment="Center"
+                Width="453"
+                Height="106"
+                Margin="725,0,0,0"
+                HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 Content="Купить Дом"
                 FontFamily="Segoe UI Black"
@@ -42,8 +101,9 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Margin="48,0,0,0"
-                HorizontalAlignment="Left"
+                Width="1808"
+                Height="120"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontFamily="Sitka Small"
                 FontSize="48"
@@ -53,92 +113,21 @@
                 TextWrapping="Wrap" />
             <Label
                 x:Name="LB_OverHouses"
-                Grid.Row="2"
+                Grid.Row="1"
                 Grid.ColumnSpan="2"
-                Margin="0,9,0,0"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Top"
+                VerticalAlignment="Bottom"
                 Content="Наши дома"
                 FontFamily="Segoe UI Black"
                 FontSize="72"
                 Foreground="White" />
-            <Image
-                x:Name="Image_1Home"
-                Grid.Row="3"
-                Width="632"
-                Height="503"
-                Margin="0,4,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                PreviewMouseDown="Image_1Home_PreviewMouseDown"
-                Source="/Images/KYB.png" />
-            <Image
-                x:Name="Image_2Home"
-                Grid.Row="3"
-                Grid.Column="1"
-                Width="632"
-                Height="503"
-                Margin="0,4,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                PreviewMouseDown="Image_2Home_PreviewMouseDown"
-                Source="/Images/Home2.1.png" />
-            <Image
-                x:Name="Image_3Home"
-                Grid.Row="4"
-                Width="641"
-                Height="534"
-                Margin="0,15,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                PreviewMouseDown="Image_3Home_PreviewMouseDown"
-                Source="/Images/MS.png" />
-            <Label
-                x:Name="LB_HOME1"
-                Grid.Row="3"
-                Width="637"
-                Height="74"
-                Margin="0,510,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Content="Дом &quot;Каникулы у бабушки&quot;"
-                FontFamily="Segoe UI Semibold"
-                FontSize="48"
-                Foreground="White" />
-            <Label
-                x:Name="LB_HOME2"
-                Grid.Row="3"
-                Grid.Column="1"
-                Width="645"
-                Height="74"
-                Margin="0,510,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Content="Дом &quot;Мой папа бизнесмен&quot;"
-                FontFamily="Segoe UI Semibold"
-                FontSize="48"
-                Foreground="White" />
-            <Label
-                x:Name="LB_HOM3"
-                Grid.Row="4"
-                Width="473"
-                Height="74"
-                Margin="0,550,0,0"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Top"
-                Content="Дом &quot;Мечта соседа&quot;"
-                FontFamily="Segoe UI Semibold"
-                FontSize="48"
-                Foreground="White" />
             <Button
                 x:Name="Btn_Add_Home"
-                Grid.Row="4"
-                Grid.Column="1"
+                Grid.Row="3"
                 Width="260"
-                Height="103"
-                Margin="0,262,0,0"
+                Height="102"
                 HorizontalAlignment="Center"
-                VerticalAlignment="Top"
+                VerticalAlignment="Center"
                 Background="#FF1DF2DC"
                 Click="Btn_Add_Home_Click"
                 Content="Add home"
