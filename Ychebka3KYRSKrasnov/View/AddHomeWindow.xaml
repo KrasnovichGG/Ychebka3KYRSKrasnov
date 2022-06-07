@@ -9,7 +9,7 @@
     Title="AddHomeWindow"
     Width="881"
     Height="459"
-    Background="Black"
+    Background="#f0f0f0"
     ResizeMode="NoResize"
     mc:Ignorable="d">
     <Grid x:Name="ADHG">
@@ -22,7 +22,9 @@
             Grid.Column="0"
             VerticalAlignment="Stretch"
             d:ItemsSource="{d:SampleData ItemCount=9}"
-            SelectionChanged="LstViewChastiDoma_SelectionChanged">
+            Background="Wheat"
+            SelectionChanged="LstViewChastiDoma_SelectionChanged"
+            Style="{StaticResource MaterialDesignListBox}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Choose Characters" />
@@ -34,9 +36,13 @@
             Grid.Column="1"
             Width="298"
             Height="66"
+            FontSize="18"
+            Style="{StaticResource MaterialDesignFilledComboBox}"
+            Foreground="Black"
             Margin="260,20,0,0"
             HorizontalAlignment="Left"
-            VerticalAlignment="Top" />
+            VerticalAlignment="Top"
+            SelectedIndex="0" />
         <Image
             x:Name="Image_Vibor"
             Grid.Column="1"
@@ -69,7 +75,6 @@
             FontFamily="Stencil"
             FontSize="24"
             TextAlignment="Center"
-            
             TextWrapping="Wrap" />
         <Label
             x:Name="LB_color"
@@ -79,8 +84,7 @@
             VerticalAlignment="Top"
             Content="Enter object color"
             FontFamily="Stencil"
-            
-            Foreground="White" />
+            Foreground="Black" />
         <TextBox
             x:Name="TxtBpice"
             Grid.Column="1"
@@ -92,7 +96,6 @@
             FontFamily="Stencil"
             FontSize="24"
             TextAlignment="Center"
-            
             TextWrapping="Wrap" />
         <Label
             x:Name="LB__price"
@@ -102,7 +105,7 @@
             VerticalAlignment="Top"
             Content="Enter_Price"
             FontFamily="Stencil"
-            Foreground="White" />
+            Foreground="Black" />
         <TextBox
             x:Name="TxtBMaterial"
             Grid.Column="1"
@@ -123,16 +126,6 @@
             VerticalAlignment="Top"
             Content="Enter_Material"
             FontFamily="Stencil"
-            Foreground="White"
-            RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform />
-                    <SkewTransform />
-                    <RotateTransform Angle="-0.085" />
-                    <TranslateTransform />
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
+            Foreground="Black" />
     </Grid>
 </Window>

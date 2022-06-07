@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="WinH"
     Title="WindowHouses"
@@ -13,7 +14,7 @@
     ResizeMode="NoResize"
     WindowState="Maximized"
     mc:Ignorable="d">
-    <ScrollViewer>
+    <ScrollViewer ScrollViewer.HorizontalScrollBarVisibility="Disabled">
         <Grid x:Name="GridHous" Height="2090">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="963*" />
@@ -26,42 +27,60 @@
                 <RowDefinition Height="121*" />
             </Grid.RowDefinitions>
 
-            <ScrollViewer
+            <!--<Grid
                 Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Margin="50,0">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <ListView x:Name="HousesLstView1" Background="Black" SelectionChanged="HousesLstView1_SelectionChanged">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <StackPanel>
-                                    <Image
-                                        Width="500"
-                                        Height="400"
-                                        HorizontalAlignment="Center"
-                                        Source="{Binding Image_Home}" />
-                                    <Label
-                                        Height="74"
-                                        HorizontalAlignment="Stretch"
-                                        Content="{Binding Name}"
-                                        FontFamily="Segoe UI Semibold"
-                                        FontSize="48"
-                                        Foreground="White" />
-                                </StackPanel>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>-->
+            <ScrollViewer 
+                Grid.Row="2 "
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="50,0">
+            <ListView
+                x:Name="HousesLstView1"
+                Grid.Row="2 "
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="50,0"
+                HorizontalAlignment="Stretch"
+                Background="Black"
+                SelectionChanged="HousesLstView1_SelectionChanged"
+                Style="{DynamicResource MaterialDesignToolVerticalToggleListBox}">
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel HorizontalAlignment="Center" Orientation="Horizontal" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <Image
+                                Width="500"
+                                Height="400"
+                                HorizontalAlignment="Center"
+                                Source="{Binding Image_Home}" />
+                            <Label
+                                Height="74"
+                                HorizontalAlignment="Stretch"
+                                Content="{Binding Name}"
+                                FontFamily="Segoe UI Semibold"
+                                FontSize="48"
+                                Foreground="White" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
-                    <ListView
+            <!--<ListView
                         x:Name="HousesLstView2"
-                        SelectionChanged="HousesLstView1_SelectionChanged"
                         Grid.Column="1"
-                        Background="Black">
+                        Background="Black"
+                        SelectionChanged="HousesLstView1_SelectionChanged" Margin="10,0,-10,0">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel>
@@ -80,17 +99,14 @@
                                 </StackPanel>
                             </DataTemplate>
                         </ListView.ItemTemplate>
-                    </ListView>
-                </Grid>
+                    </ListView>-->
+            <!--</Grid>-->
             </ScrollViewer>
             <Label
                 x:Name="LB_BuyingHouse"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Width="453"
-                Height="106"
-                Margin="725,0,0,0"
-                HorizontalAlignment="Left"
+                HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 Content="Купить Дом"
                 FontFamily="Segoe UI Black"
@@ -101,8 +117,6 @@
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Width="1808"
-                Height="120"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontFamily="Sitka Small"
@@ -121,19 +135,23 @@
                 FontFamily="Segoe UI Black"
                 FontSize="72"
                 Foreground="White" />
+
             <Button
                 x:Name="Btn_Add_Home"
                 Grid.Row="3"
-                Width="260"
+                Grid.Column="1"
+                Width="102"
                 Height="102"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                Background="#FF1DF2DC"
+                Margin="0,0,20,0"
+                Panel.ZIndex="2"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
                 Click="Btn_Add_Home_Click"
-                Content="Add home"
+                Content="+"
                 Cursor="Hand"
                 FontFamily="Stencil"
-                FontSize="24" />
+                FontSize="74"
+                Style="{DynamicResource MaterialDesignFloatingActionButton}" />
         </Grid>
     </ScrollViewer>
 </Window>

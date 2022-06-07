@@ -166,8 +166,7 @@
                 Grid.Row="4"
                 Grid.Column="2"
                 Width="170"
-                Height="100"
-                Margin="0,10,0,0"
+                Margin="0,50,0,0"
                 HorizontalAlignment="Stretch"
                 VerticalAlignment="Top" />
             <Image

@@ -5,21 +5,20 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using Ychebka3KYRSKrasnov.db;
-using System.Timers;
-using System.Windows.Media.Imaging;
 
 namespace Ychebka3KYRSKrasnov
 {
     /// <summary>
     /// Логика взаимодействия для ThirdBlock.xaml
     /// </summary>
-    public partial class ThirdBlock : Window
+    public partial class ThirdBlock : Window, IDisposable
     {
         Home Home { get; set; }
         public ThirdBlock(Home home)
         {
             InitializeComponent();
             Home = home;
+            DataContext = null;
             DataContext = Home;
             VivodIZBd();
         }
@@ -33,6 +32,7 @@ namespace Ychebka3KYRSKrasnov
             cmb5.Visibility = cmb5.HasItems ? Visibility.Visible : Visibility.Collapsed;
             cmb6.Visibility = cmb6.HasItems ? Visibility.Visible : Visibility.Collapsed;
         }
+
         public void VivodIZBd()
         {
             cmb1.ItemsSource = MainWindow.house.Home_Roof.Where(x => x.ID_Home == Home.ID_Home).ToList();
@@ -94,6 +94,11 @@ namespace Ychebka3KYRSKrasnov
         private void btnback_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        public void Dispose()
+        {
+            Dispose();
         }
     }
 }

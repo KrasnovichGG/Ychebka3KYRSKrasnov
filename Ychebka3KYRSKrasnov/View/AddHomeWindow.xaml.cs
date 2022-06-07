@@ -263,16 +263,6 @@ namespace Ychebka3KYRSKrasnov
                 MessageBox.Show("Пиши!");
             }
         }
-        //public void proverkacifri()
-        //{
-        //    string Str = TxtbCoolorobject.Text.Trim();
-        //    int Num;
-        //    bool isNum = int.TryParse(Str, out Num);
-        //    if (isNum)
-        //    {
-        //        MessageBox.Show("Вводите в колонку Цвета символы,но не цифры!");
-        //    }
-        //}
     }
 
     static class Extensions

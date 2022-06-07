@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="winlogin"
@@ -74,7 +75,8 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Content="Welcome"
-            FontFamily="Stencil"
+            FontWeight="DemiBold"
+            FontFamily="Comic Sans MS"
             FontSize="36"
             Foreground="Black" />
         <TextBox
@@ -86,18 +88,24 @@
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            FontWeight="DemiBold"
             BorderBrush="Black"
             Cursor="Hand"
+            materialDesign:HintAssist.Hint="Логин"
+            materialDesign:HintAssist.IsFloating="False"
             FontSize="24"
-            Foreground="White"
+            Foreground="Black"
             MaxLength="15"
-            Style="{StaticResource PlaceholderTextBoxStyle}"
+            
             Tag="Логин"
             TextAlignment="Center"
             TextWrapping="Wrap"
             ToolTip="15 символов" />
         <PasswordBox
             x:Name="Passbox"
+            materialDesign:HintAssist.Hint="Пароль"
+            FontWeight="DemiBold"
+            materialDesign:HintAssist.Foreground="Black"
             Width="434"
             Height="54"
             HorizontalAlignment="Center"
@@ -108,7 +116,7 @@
             BorderBrush="Black"
             Cursor="Hand"
             FontSize="24"
-            Foreground="White"
+            Foreground="Black"
             MaxLength="15"
             Tag="Пароль"
             ToolTip="15 символов" />
@@ -119,52 +127,15 @@
             Margin="0,275,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Background="#FFB2F21D"
             BorderBrush="White"
             Click="btnVXOD_Click"
             Content="Login to the application"
             FontFamily="Stencil"
-            FontSize="24" />
-        <Label
-            x:Name="LB_Krew"
-            Width="268"
-            Margin="-2,315,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Krasnovich_"
-            FontFamily="Stencil"
-            FontSize="36"
-            Foreground="Black"
-            RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform />
-                    <SkewTransform />
-                    <RotateTransform Angle="29.914" />
-                    <TranslateTransform />
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
-        <Label
-            x:Name="LB_Krew_Copy"
-            Width="275"
-            Margin="511,294,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Krasnovich_"
-            FontFamily="Stencil"
-            FontSize="36"
-            Foreground="Black"
-            RenderTransformOrigin="0.5,0.5">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform />
-                    <SkewTransform />
-                    <RotateTransform Angle="-39.102" />
-                    <TranslateTransform />
-                </TransformGroup>
-            </Label.RenderTransform>
-        </Label>
+            FontSize="24" >
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource Primary700}"/>
+            </Button.Background>
+        </Button>
         <Button
             x:Name="btnreg"
             Width="246"
@@ -172,12 +143,15 @@
             Margin="0,360,277,0"
             HorizontalAlignment="Right"
             VerticalAlignment="Top"
-            Background="#FFB2F21D"
             BorderBrush="White"
             BorderThickness="0"
             Click="btnreg_Click"
             Content="Registration"
             FontFamily="Stencil"
-            FontSize="16" />
+            FontSize="16" Cursor="Hand" >
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource Primary400}"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

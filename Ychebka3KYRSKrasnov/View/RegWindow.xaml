@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Ychebka3KYRSKrasnov"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Name="winreg"
     Title="RegWindow"
@@ -21,39 +22,47 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             Content="Registration panel"
-            FontFamily="Stencil"
-            FontSize="36"
+            FontFamily="Comic Sans MS"
+            FontSize="40"
+            FontWeight="DemiBold"
             Foreground="Black" />
         <TextBox
             x:Name="txtboxlogin"
             Width="424"
-            Height="30"
-            Margin="0,102,0,0"
+            Height="50"
+            Margin="0,84,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            materialDesign:HintAssist.Foreground="Black"
+            materialDesign:HintAssist.Hint="Login"
             BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
+            FontWeight="DemiBold"
+            Foreground="Black"
             MaxLength="15"
             TextAlignment="Center"
             TextWrapping="Wrap"
             ToolTip="До 15 символов"
-            UndoLimit="100" />
+            UndoLimit="100" TabIndex="1" />
         <PasswordBox
             x:Name="PasBoxReg"
             Width="424"
-            Height="30"
+            Height="50"
             Margin="0,440,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            materialDesign:HintAssist.Foreground="Black"
+            materialDesign:HintAssist.Hint="Password"
             BorderBrush="Black"
-            FontSize="18"
+            FontSize="22"
+            FontWeight="DemiBold"
             MaxLength="15"
-            ToolTip="до 15 символов" />
+            ToolTip="до 15 символов" Cursor="Arrow" TabIndex="5" />
         <Button
             x:Name="Btn_Reg"
             Width="204"
@@ -61,104 +70,71 @@
             Margin="0,505,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Background="#FFF5FF3A"
             Click="Btn_Reg_Click"
             Content="Registration"
             FontFamily="Stencil"
-            FontSize="20" />
-        <Label
-            x:Name="LB_Login"
-            Margin="0,71,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="your login"
-            FontFamily="Stencil"
-            FontSize="18"
-            Foreground="Black" />
-        <Label
-            x:Name="LB_Pass"
-            Margin="0,409,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="Your Pass"
-            FontFamily="Stencil"
-            FontSize="18"
-            Foreground="Black" />
+            FontSize="20" TabIndex="6">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource Primary500}" />
+            </Button.Background>
+        </Button>
         <TextBox
             x:Name="txtboxname"
             Width="424"
-            Height="30"
-            Margin="0,188,0,0"
+            Height="50"
+            Margin="0,169,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            materialDesign:HintAssist.Foreground="Black"
+            materialDesign:HintAssist.Hint="Name"
             BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
+            FontWeight="DemiBold"
             MaxLength="10"
             TextAlignment="Center"
             TextWrapping="Wrap"
-            ToolTip="До 10 символов" />
-        <Label
-            x:Name="LB_Name"
-            Margin="0,157,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="your name"
-            FontFamily="Stencil"
-            FontSize="18"
-            Foreground="Black" />
+            ToolTip="До 10 символов" TabIndex="2" />
         <TextBox
             x:Name="txtboxphone"
             Width="424"
-            Height="30"
+            Height="50"
             Margin="0,262,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            materialDesign:HintAssist.Foreground="Black"
+            materialDesign:HintAssist.Hint="Phone"
             BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
+            FontWeight="DemiBold"
             MaxLength="11"
             TextAlignment="Center"
             TextWrapping="Wrap"
-            ToolTip="до 12 символов" />
-        <Label
-            x:Name="LB_phone"
-            Margin="0,231,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="Your phone"
-            FontFamily="Stencil"
-            FontSize="18"
-            Foreground="Black" />
+            ToolTip="до 12 символов" TabIndex="3" />
         <TextBox
             x:Name="txtboxemail"
             Width="424"
-            Height="30"
+            Height="50"
             Margin="0,348,0,0"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
+            materialDesign:HintAssist.Foreground="Black"
+            materialDesign:HintAssist.Hint="Email"
             BorderBrush="Black"
             FontFamily="Sitka Small"
             FontSize="22"
+            FontWeight="DemiBold"
             MaxLength="15"
             TextAlignment="Center"
             TextWrapping="Wrap"
-            ToolTip="до 15 символов" />
-        <Label
-            x:Name="LB_email"
-            Margin="0,317,0,0"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Top"
-            Content="Your mail"
-            FontFamily="Stencil"
-            FontSize="18"
-            Foreground="Black" />
+            ToolTip="до 15 символов" TabIndex="4" />
         <Button
             x:Name="Btn_Back"
             Width="104"
@@ -166,10 +142,13 @@
             Margin="41,505,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
-            Background="#FFF5FF3A"
             Click="Btn_Back_Click"
             Content="Back"
             FontFamily="Stencil"
-            FontSize="20" />
+            FontSize="20" TabIndex="7" Cursor="Hand">
+            <Button.Background>
+                <SolidColorBrush Color="{DynamicResource Primary400}" />
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
